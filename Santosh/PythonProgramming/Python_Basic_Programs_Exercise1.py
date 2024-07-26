@@ -1,6 +1,7 @@
 # Python program to repeat a given string 5 times.
 import math
-from datetime import datetime, date
+from datetime import datetime
+from datetime import date
 
 print("_" * 100)
 print("### Python program to repeat a given string 5 times.")
@@ -97,3 +98,67 @@ print("### Python program to print the current date in the given format")
 
 date = date.today()
 print("Today date is ", date.strftime("%Y %b %d"))
+
+"""
+# Python program to calculate days between 2 dates
+print("_" * 100)
+print("### Python program to print the current date in the given format")
+
+date_1 = date(2023, 1, 5)
+date_2 = date(2023, 1, 22)
+result = (date_2-date_1).days
+print("Difference is ", result, "days")
+"""
+
+# Python program to get the factorial of the given number.
+print("_" * 100)
+print("### Python program to get the factorial of the given number.")
+x = rem = num = 10
+y = 1
+# rem = 0
+
+while x>1:
+
+    y = rem * (x-1)
+    rem = y
+    x = x-1
+
+print("Factorial of",num ,"is", y)
+
+
+# Python program to get the Fibonacci series between 0 to 50.
+print("_" * 100)
+print("### Python program to get the Fibonacci series between 0 to 50.")
+num = 50
+var1 = 0
+var2 = 1
+var3 = 0
+count = 0
+print("Fibonacci series between 0 to 50 is: ", var1, var2)
+#print("Fibonacci series between 0 to 50 is: ", var2)
+
+while var3 < 50:
+    if count != 0:
+         print(var3)
+    var3 = var1 + var2
+    var1 = var2
+    var2 = var3
+    count = 1
+
+# Python program to find the square root of a number.
+print("_" * 100)
+print("### Python program to find the square root of a number.")
+x = num = 25
+y = math.sqrt(x)
+print(y)
+
+
+# Python program to check leap year.
+print("_" * 100)
+print("### Python program to check leap year.")
+num = 2024
+rem = num % 4
+if rem == 0:
+        print("Leap year")
+else:
+        print("Not leap year")
