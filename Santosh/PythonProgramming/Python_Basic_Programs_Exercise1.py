@@ -1,8 +1,8 @@
-# Python program to repeat a given string 5 times.
 import math
 from datetime import datetime
 from datetime import date
 
+# Python program to repeat a given string 5 times.
 print("_" * 100)
 print("### Python program to repeat a given string 5 times.")
 s = "SQA_tools "
