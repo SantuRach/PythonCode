@@ -254,11 +254,138 @@ print(var2, type(var2))
 # Conversion is not possible
 
 ############## List -> String ##############
-#
+# brackets, space, character every thing is considered as string.
 print("_" * 100)
-list1 = "4,5,'Santosh',6.2"
-print(str1, type(str1))
-print(str1, type(bool(str1)))
-print(bool(str1))
-var2 = bool(str1)
+list1 = [4,5,'Santosh',6.2,{1,45,56,34}]
+print(list1, type(list1))
+print(list1, type(str(list1)))
+print(str(list1))
+var2 = str(list1)
 print(var2, type(var2))
+print(var2[4], type(var2))
+print(var2[5], type(var2))
+print(var2[-1], type(var2)) #}
+
+############## List -> Tuple ##############
+# brackets, space, character, number every thing is considered as string.
+print("_" * 100)
+list1 = [3,5,'Santosh',6.2,{1,45,56,34}]
+print(list1, type(list1))
+print(list1, type(tuple(list1)))
+print(tuple(list1))
+var3 = tuple(list1)
+print(var3, type(var3))
+print(var3[4], type(var3))
+print(var3[-2], type(var3))
+
+############## List -> Dict ##############
+# Direct conversion to dict is not possible.
+# zip function to be used to convert
+# two list should be present to map key and Value
+# Question 1 raised. Why tuple inside the list is not converting to dict ?
+print("_" * 100)
+#list4 = [4,5,'Santosh',6.2,{1,2,3,4}]
+list4 = [4,5,'Santosh',6.2,1]
+#list5 = ['a',123,'Rachotimath','Santosh',{4,5,6,7}]
+list5 = ['a',123,'Rachotimath','Santosh',2]
+print(list4, type(list4))
+print(list5, type(list5))
+output1 = dict(zip(list4, list5))
+print(output1, type(output1))
+print(output1[4], type(output1))
+print(output1[6.2], type(output1))
+print(output1['Santosh'], type(output1))
+
+############## List -> Set ##############
+# Set dont have indexing
+print("_" * 100)
+list4 = [4,5,'Santosh',6.2,1]
+print(list4, type(list4))
+output1 = set(list4)
+print(output1, type(output1))
+
+############## List -> Boolean ##############
+print("_" * 100)
+list4 = []
+print(list4, type(list4))
+print(list4, type(bool(list4))) #1
+var2 = bool(list4)
+print(var2, type(list4)) #2
+
+print("_" * 100)
+list4 = [4,5,'Santosh',6.2,1]
+print(list4, type(list4))
+print(list4, type(bool(list4))) #1
+var2 = bool(list4)
+print(var2, type(list4)) #2
+
+
+########################### Tuple Type casting ###########################
+
+############## Tuple -> Int ##############
+# Conversion is not possible
+
+############## Tuple -> Float ##############
+# Conversion is not possible
+
+############## Tuple -> String ##############
+# brackets, space, character every thing is considered as string.
+print("_" * 100)
+tup1 = (4,5,'Santosh',6.2,{1,45,56,34})
+print(tup1, type(tup1))
+print(tup1, type(str(tup1)))
+print(str(tup1))
+var2 = str(tup1)
+print(var2, type(var2))
+print(var2[4],var2[-1],var2[-5], type(var2))
+
+############## Tuple -> List ##############
+# brackets, space, character every thing is considered as string.
+print("_" * 100)
+tup1 = (4,5,'Santosh',6.2,{1,45,56,34})
+print(tup1, type(tup1))
+print(tup1, type(list(tup1)))
+print(list(tup1))
+var2 = list(tup1)
+print(var2, type(var2))
+print(var2[4],var2[-1],var2[-5], type(var2))
+
+############## Tuple -> Dict ##############
+# Direct conversion to dict is not possible.
+# zip function to be used to convert
+# two list should be present to map key and Value
+# Question 1 raised. Why tuple inside the list is not converting to dict ?
+print("_" * 100)
+list4 = (4,5,'Santosh',6.2,1)
+list5 = ('a',123,'Rachotimath','Santosh',2)
+print(list4, type(list4))
+print(list5, type(list5))
+output1 = dict(zip(list4, list5))
+print(output1, type(output1))
+print(output1[4], type(output1))
+print(output1[6.2], type(output1))
+print(output1['Santosh'], type(output1))
+
+############## List -> Set ##############
+# Set dont have indexing
+print("_" * 100)
+list4 = (4,5,'Santosh',6.2,1)
+print(list4, type(list4))
+output1 = set(list4)
+print(output1, type(output1))
+
+############## List -> Boolean ##############
+print("_" * 100)
+list4 = ()
+print(list4, type(list4))
+print(list4, type(bool(list4))) #1
+var2 = bool(list4)
+print(var2, type(list4)) #2
+
+print("_" * 100)
+list4 = (4,5,'Santosh',6.2,1)
+print(list4, type(list4))
+print(list4, type(bool(list4))) #1
+var2 = bool(list4)
+print(var2, type(list4)) #2
+
