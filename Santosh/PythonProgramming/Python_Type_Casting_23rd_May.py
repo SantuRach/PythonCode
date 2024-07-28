@@ -366,7 +366,7 @@ print(output1[4], type(output1))
 print(output1[6.2], type(output1))
 print(output1['Santosh'], type(output1))
 
-############## List -> Set ##############
+############## Tuple -> Set ##############
 # Set dont have indexing
 print("_" * 100)
 list4 = (4,5,'Santosh',6.2,1)
@@ -374,18 +374,211 @@ print(list4, type(list4))
 output1 = set(list4)
 print(output1, type(output1))
 
-############## List -> Boolean ##############
+############## Tuple -> Boolean ##############
 print("_" * 100)
 list4 = ()
 print(list4, type(list4))
 print(list4, type(bool(list4))) #1
 var2 = bool(list4)
-print(var2, type(list4)) #2
+print(var2, type(var2)) #2
 
 print("_" * 100)
 list4 = (4,5,'Santosh',6.2,1)
 print(list4, type(list4))
 print(list4, type(bool(list4))) #1
 var2 = bool(list4)
-print(var2, type(list4)) #2
+print(var2, type(var2)) #2
 
+########################### Dict Type casting ###########################
+
+############## Dict -> Int ##############
+# Conversion is not possible
+
+############## Dict -> Float ##############
+# Conversion is not possible
+
+############## Dict -> String ##############
+# Direct Conversion is not possible
+# Key and Value mapping should be present same as Dict
+# Single quote to be used for string declaration
+# import json to covert string to Dict
+# json.loads method to be used to convert
+
+print("_" * 100)
+
+dict1 = {"Name" : 552, "Surname" : "Rachotimath", "DOB" : "28Aug1989"}
+print(dict1, type(dict1))
+str1 = str(dict1)
+print(str1, type(str1))
+print(str1[2])
+
+############## Dict -> List ##############
+# Only list of keys will be printed not values
+print("_" * 100)
+
+dict1 = {"Name" : 552, "Surname" : "Rachotimath", "DOB" : "28Aug1989"}
+print(dict1, type(dict1))
+print(dict1, type(list(dict1)))
+print(list(dict1))
+var2 = list(dict1)
+print(var2, type(var2))
+
+############## Dict -> Tuple ##############
+# Only list of keys will be printed not values
+print("_" * 100)
+
+dict1 = {"Name" : 552, "Surname" : "Rachotimath", "DOB" : "28Aug1989"}
+print(dict1, type(dict1))
+print(dict1, type(tuple(dict1)))
+print(tuple(dict1))
+var2 = tuple(dict1)
+print(var2, type(var2))
+print(dict1.values()) #prints values only
+print(dict1.keys()) #prints keys only
+
+############## Dict -> Set ##############
+# Only list of keys will be printed not values
+print("_" * 100)
+
+dict1 = {"Name" : 552, "Surname" : "Rachotimath", "DOB" : "28Aug1989"}
+print(dict1, type(dict1))
+print(dict1, type(set(dict1)))
+print(set(dict1))
+var2 = set(dict1)
+print(var2, type(var2)) #keys will be printed not values
+
+
+############## Dict -> Boolean ##############
+print("_" * 100)
+dict1 = {"Name" : 552, "Surname" : "Rachotimath", "DOB" : "28Aug1989"}
+print(dict1, type(dict1))
+print(dict1, type(bool(dict1))) #1
+var2 = bool(dict1)
+print(var2, type(var2)) #2
+
+print("_" * 100)
+dict1 = {}
+print(dict1, type(dict1))
+print(dict1, type(bool(dict1))) #1
+var2 = bool(dict1)
+print(var2, type(var2)) #2
+
+
+########################### SET Type casting ###########################
+
+############## SET -> Int ##############
+# Conversion is not possible
+
+############## SET -> Float ##############
+# Conversion is not possible
+
+############## SET -> String ##############
+# brackets, space, character every thing is considered as string.
+print("_" * 100)
+set1 = {4,5,'Santosh',6.2}
+print(set1, type(set1))
+print(set1, type(str(set1)))
+print(str(set1))
+var2 = str(set1)
+print(var2, type(var2))
+print(var2[4],var2[-2],var2[-5], type(var2))
+
+############## SET -> list ##############
+# brackets, space, character every thing is considered as string.
+print("_" * 100)
+set1 = {4,5,'Santosh',6.2}
+print(set1, type(set1))
+print(set1, type(list(set1)))
+print(list(set1))
+var2 = list(set1)
+print(var2, type(var2))
+print(var2[3], type(var2))
+
+############## SET -> tuple ##############
+# brackets, space, character every thing is considered as string.
+print("_" * 100)
+set1 = {4,5,'Santosh',6.2}
+print(set1, type(set1))
+print(set1, type(tuple(set1)))
+print(tuple(set1))
+var2 = tuple(set1)
+print(var2, type(var2))
+print(var2[3], type(var2))
+
+############## SET -> dict ##############
+# Conversion not possible
+
+############## SET -> Boolean ##############
+print("_" * 100)
+set1 = set() # if you give set1 = {} then it considers as dict
+print(set1, type(set1))
+print(set1, type(bool(set1))) #1
+var2 = bool(set1)
+print(var2, type(var2)) #2
+
+print("_" * 100)
+set1 = {4,5,'Santosh',6.2}
+print(set1, type(set1))
+print(set1, type(bool(set1))) #1
+var2 = bool(set1)
+print(var2, type(var2)) #2
+
+########################### Boolean Type casting ###########################
+
+############## Boolean -> Int ##############
+print("_" * 100)
+bool1 = True
+print(bool1, type(bool1))
+print(bool1, type(int(bool1)))
+var2 = int(bool1)
+print(var2, type(var2)) #2
+
+print("_" * 100)
+bool1 = False
+print(bool1, type(bool1))
+print(bool1, type(int(bool1)))
+var2 = int(bool1)
+print(var2, type(var2)) #2
+############## Boolean -> Float ##############
+print("_" * 100)
+bool1 = True
+print(bool1, type(bool1))
+print(bool1, type(float(bool1)))
+var2 = float(bool1)
+print(var2, type(var2)) #2
+
+print("_" * 100)
+bool1 = False
+print(bool1, type(bool1))
+print(bool1, type(float(bool1)))
+var2 = float(bool1)
+print(var2, type(var2)) #2
+
+############## Boolean -> String ##############
+print("_" * 100)
+bool1 = True
+print(bool1, type(bool1))
+print(bool1, type(str(bool1)))
+var2 = str(bool1)
+print(var2, type(var2)) #2
+print(var2[0], type(var2)) #2
+
+print("_" * 100)
+bool1 = False
+print(bool1, type(bool1))
+print(bool1, type(str(bool1)))
+var2 = str(bool1)
+print(var2, type(var2)) #2
+print(var2[0], type(var2)) #2
+
+############## Boolean -> List ##############
+# Conversion is not possible
+
+############## Boolean -> tuple ##############
+# Conversion is not possible
+
+############## Boolean -> Dict ##############
+# Conversion is not possible
+
+############## Boolean -> Set ##############
+# Conversion is not possible
