@@ -7,7 +7,8 @@ if (condition):
 else:
     Code2
 '''
-'''
+
+
 # Example 1
 print("_" * 50)
 a = 10
@@ -204,4 +205,119 @@ if num1.isupper():
 else:
         print("Not Capital")
 
-'''
+
+# Exercise 11
+# program to check whether the given number is an integer or not.
+print("_" * 50)
+num1 = input("Enter number: ")
+num1 = int(num1)
+
+if (type(num1) == int):
+        print("Integer")
+else:
+        print("Not Integer")
+
+
+# Exercise 12
+# program to print all the numbers from 10-15 except 13
+print("_" * 50)
+for num8 in range(10, 15):
+    if num8 != 13:
+        print(num8, end="-")
+
+
+# Exercise 12
+# Python program to find the electricity bill. According to the following conditions:
+# Up to 50 units rs 0.50/unit
+# Up to 100 units rs 0.75/unit
+# Up to 250 units rs 1.25/unit
+# above 250 rs 1.50/unit
+# an additional surcharge of 17% is added to the bill
+print("_" * 50)
+inp_unit = 350
+inp1 = inp2 = inp3 = inp4 = 0
+for num8 in range(0, inp_unit+1):
+    if num8 <= 50:
+        inp1 = num8*0.5
+    elif num8 <= 100:
+        inp2 = ((num8-50) * 0.75)
+    elif num8 <= 250:
+        inp3 = ((num8-100) * 1.25)
+    else:
+        inp4 = ((num8-250) * 1.5)
+
+print((inp1+inp2+inp3+inp4)*1.17)
+
+
+# Exercise 13
+# Python program to check whether the input number if a multiple of two print “Fizz”
+# instead of the number and for the multiples of three print “Buzz”. For numbers that are
+# multiples of both two and three print “FizzBuzz”.
+print("_" * 50)
+num1 = 6
+
+if num1 % 2 == 0 or num1 % 3 == 0:
+    if num1 % 2 == 0:
+        if num1 % 3 == 0:
+            print("FizzBuzz")
+        else:
+            print("Fizz")
+    else:
+            print("Buzz")
+            
+
+
+# Exercise 14
+# Program to check whether an alphabet is a vowel
+print("_" * 50)
+vowel = ['a','e','i','o','u']
+inp1 = 'i'
+
+if inp1 in vowel:
+    print("Vowel")
+else:
+    print("Not Vowel")
+
+
+# Exercise 15
+# Python program to check whether the input number is a float or not
+# if yes then round up the number to 2 decimal
+print("_" * 50)
+
+inp1 = 25.36554478
+
+if type(inp1) == float:
+    print(round(inp1,2))
+else:
+    print("Not float")
+
+# Exercise 16
+# program to check whether the given input is a complex type or not.
+print("_" * 50)
+
+inp1 = 5+6
+
+if type(inp1) == complex:
+    print("True")
+else:
+    print("False")
+
+
+# Exercise 17
+# Python program to print the absolute value of a number defined by the user.
+print("_" * 50)
+
+inp1 = 665
+print(abs(inp1))
+
+# Exercise 18
+# Python program to check whether the last digit of a number
+# defined by the user is divisible by 4 or not.
+print("_" * 50)
+
+inp1 = 58
+rem = inp1%10
+if rem%4 == 0:
+    print("Divisible by 4")
+else:
+    print("Not Divisible by 4")
