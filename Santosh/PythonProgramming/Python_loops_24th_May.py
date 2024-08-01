@@ -7,6 +7,12 @@ for inp in range (start_value;start_value:difference):
 
 '''
 '''
+#  program to print reverse
+print("_" * 50)
+for i in range(10, 5, -1):
+    print(i)
+
+
 # Example 1
 # program to find those numbers which are divisible by 7 and multiple of 5,
 # between 1500 and 2700 (both included).
@@ -318,5 +324,119 @@ for i in range(1, 3, 1):
 for i in range(1, 6, 1):
         print("  ",num10*3)
 
+# Example 21
+#  Write a program to get input from the user if it is a number insert it into an empty
+#  list using Write a program to get input from the user if it is a number
+#  insert it into an empty list using
+print("_" * 50)
+
+# n = int(input("Enter number: "))
+input = '125python'
+list1 = []
+
+for i in input:
+        print(i)
+        if i.isnumeric():
+            list1.append(int(i))
+print(list1)
+
+# Example 22
+#  apply loop on list
+print("_" * 50)
+
+list1 = [11,55,54,56,44,99,564]
+
+for element in list1:
+    print(element)
+
+# Example 23
+#  apply loop on list to print in reverse
+print("_" * 50)
+list1 = [11, 55, 54, 56, 44, 99, 564]
+
+leng = int(len(list1))
+
+for element in range(-1,-leng-1,-1):
+    print(list1[element])
+
+# Example 24
+#  Apply loop on string values
+print("_" * 50)
+str1 = 'python programming'
+
+for char in str1:
+    print(char)
+
+# Example 25
+#  Apply loop on string values - reverse
+print("_" * 50)
+str1 = 'python programming'
+leng = len(str1)
+print(leng)
+for char in range(-1, -leng-1,-1):
+    print(str1[char], end="")
+
+# Example 26
+#  apply loop on dictionary
+print("_" * 50)
+dict1 = {'Name': 'Santosh', 'Surname': 'Rachotimath', 'Age': 36}
+
+for key in dict1:
+    print(key)
+
+# Example 27
+#  apply loop on dictionary using function item to print in tuple format
+print("_" * 50)
+dict1 = {'Name': 'Santosh', 'Surname': 'Rachotimath', 'Age': 36}
+
+for key in dict1.items():
+    print(key)
+
+# Example 28
+#  apply loop on dictionary
+print("_" * 50)
+dict1 = {'Name': 'Santosh', 'Surname': 'Rachotimath', 'Age': 36}
+keys = dict1.values()
+#for key in dict1:
+print(keys)
+
+# Example 29
+#  apply loop on dictionary tp print both key and Values
+print("_" * 50)
+dict1 = {'Name': 'Santosh', 'Surname': 'Rachotimath', 'Age': 36}
+for key1, value1 in dict1.items():
+    print(key1, value1)
+
+# Example 30
+#  apply loop on dictionary
+print("_" * 50)
+dict1 = {
+    'Teaching':
+        {
+            'Maths': ['M1', 'M2', 'M3'],
+            'English': ['E1', 'E2', 'E3'],
+            'Hindi': ['H1', 'H2', 'H3']
+        },
+    'Accounts':
+        {
+            'Acc1': [123, 456, 789],
+            'Acc2': [147, 258, 369],
+            'Acc3': [321, 654, 987]
+        },
+    'Student':
+        {
+            'Class8': ['8A', '8B', '8C'],
+            'Class9': ['9A', '9B', '9C'],
+            'Class10': ['10A', '10B', '10C'],
+        }
+}
+print("=" * 40)
+for key1, value1 in dict1.items():
+    print("Department: ", key1)
+    for key2, value2  in value1.items():
+        print("Department", key1, "has: ", key2)
+        for key3 in value2:
+            print(key2," has: ", key3)
+    print("=" * 40)
+
 '''
-# till program 40
