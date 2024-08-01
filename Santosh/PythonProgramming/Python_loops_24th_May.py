@@ -6,7 +6,7 @@ for inp in range (start_value;start_value:difference):
     Code1
 
 '''
-'''
+
 #  program to print reverse
 print("_" * 50)
 for i in range(10, 5, -1):
@@ -439,4 +439,100 @@ for key1, value1 in dict1.items():
             print(key2," has: ", key3)
     print("=" * 40)
 
-'''
+# Example 31
+#  program to get input from the user if it is a string insert it into an empty list
+print("_" * 50)
+str1 = '123santosh546'
+list1 = []
+for key in str1:
+    if key.isalpha():
+        list1.append(key)
+print(list1)
+
+
+# Example 31
+#  program to get input from the user if it is a string insert it into an empty list
+print("_" * 50)
+str1 = '123santosh546'
+list1 = []
+for key in str1:
+    if key.isalpha():
+        list1.append(key)
+print(list1)
+
+
+# Example 32
+#  program to get the Fibonacci series between 0 to 10 using Python Loops.
+print("_" * 50)
+fibo_0 = 0
+fibo_final = 0
+fibo_1 = 1
+fibo_num = 10
+print(fibo_0,fibo_1, end=" ")
+for fibo_num in range(9):
+    fibo_final = fibo_0 + fibo_1
+    fibo_0 = fibo_1
+    fibo_1 = fibo_final
+    print(fibo_final, end=" ")
+
+
+# Example 33
+#  program to check the validity of password input by users using Python Loops.
+print("_" * 50)
+upper = lower = num = special = count = 0
+password1 = '$AN526456gyu5u0'
+list1 = ['$','#','@']
+for char in password1:
+    count += 1
+    if char.isalpha():
+        if char.isupper():
+            upper = 1
+        else:
+            lower = 1
+    elif char.isnumeric():
+        num = 1
+    elif char in list1:
+        special = 1
+    else:
+        continue
+
+if upper == lower == num == special == 1 and count >= 5 and count <= 15:
+    print("Valid password")
+else:
+    print("InValid password")
+
+
+# Example 33
+#  program to print the values of the keys of a dictionary using Python
+print("_" * 50)
+dict1 = {'Name': 'Virat', 'Sports': 'Cricket', 'DOC': 28081989}
+for i, j in dict1.items():
+    print(j)
+
+#  program to program to print the keys and values of a dictionary using Python Loops
+print("_" * 50)
+dict1 = {'Name': 'Virat', 'Sports': 'Cricket', 'DOC': 28081989}
+for i, j in dict1.items():
+    print(i,j)
+
+
+# Example 33
+#  sum of the first 10 natural numbers using the while loop
+print("_" * 50)
+num1 = 11
+start = sum1 = 0
+
+while start < num1:
+    sum1 += start
+    start += 1
+
+print(sum1)
+
+# Example 34
+#  program to print the days in a week except Sunday using a while loop in Python.
+print("_" * 50)
+for num in range(1,10):
+    if(num == 6):
+        break
+    print(num)
+
