@@ -224,6 +224,22 @@ print("_" * 80)
 str1 = 'Today India is playing good cricket'
 print(str1.split())
 
+
+# str.strip method - removes blank space at the beginning and end
+print("_" * 80)
+str1 = '         Today India is playing good cricket        '
+print(str1.strip())
+
+# str.lstrip method - removes blank space at the beginning only
+print("_" * 80)
+str1 = '         Today India is playing good cricket        '
+print(str1.lstrip())
+
+# str.rstrip method - removes blank space at the end only
+print("_" * 80)
+str1 = '         Today India is playing good cricket        '
+print(str1.rstrip())
+
 ''''
 # Exercise 1
 #   program to get a string made of the first and the last 2 chars
