@@ -284,9 +284,7 @@ print(var3[-2], type(var3))
 # two list should be present to map key and Value
 # Question 1 raised. Why tuple inside the list is not converting to dict ?
 print("_" * 100)
-#list4 = [4,5,'Santosh',6.2,{1,2,3,4}]
 list4 = [4,5,'Santosh',6.2,1]
-#list5 = ['a',123,'Rachotimath','Santosh',{4,5,6,7}]
 list5 = ['a',123,'Rachotimath','Santosh',2]
 print(list4, type(list4))
 print(list5, type(list5))

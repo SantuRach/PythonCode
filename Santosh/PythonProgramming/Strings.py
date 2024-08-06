@@ -1,4 +1,5 @@
 
+''''
 print("_" * 80)
 str1 = 'Hello'
 str2 = "Python programming"
@@ -235,12 +236,81 @@ print("_" * 80)
 str1 = '         Today India is playing good cricket        '
 print(str1.lstrip())
 
-# str.rstrip method - removes blank space at the end only
+# str.rstrip method - removes blank space at the end only2
 print("_" * 80)
 str1 = '         Today India is playing good cricket        '
 print(str1.rstrip())
 
-''''
+# str.join method - removes blank space at the end only2
+print("_" * 80)
+str1 = 'Today India is playing good cricket'
+output1 = '-'.join(str1)
+print(output1) # T-o-d-a-y- -I-n-d-i-a- -i-s- -p-l-a-y-i-n-g- -g-o-o-d- -c-r-i-c-k-e-t
+
+# isalpha - method checks only string contains alphabet or not
+print("_" * 80)
+str1 = 'SantoshRachotimath'
+print(str1, str1.isalpha()) # true
+
+# isalpha - method checks only string contains alphabet or not
+print("_" * 80)
+str1 = 'Santosh Rachotimath'
+print(str1, str1.isalpha()) # False, since space is there
+
+# isalpha - method checks only string contains alphabet or not
+print("_" * 80)
+str1 = 'Santosh123'
+print(str1, str1.isalpha()) # False, since number is there
+
+# isnumeric - method checks only string contains alphabet or not
+print("_" * 80)
+str1 = '123456789'
+print(str1, str1.isnumeric()) # True
+
+# isnumeric - method checks only string contains alphabet or not
+print("_" * 80)
+str1 = '123 456'
+print(str1, str1.isalpha()) # False, since space is there
+
+# isnumeric - method checks only string contains alphabet or not
+print("_" * 80)
+str1 = '123san'
+print(str1, str1.isalpha()) # False, since alphabet is there
+
+
+# is alpha numeric - method checks only string or numeric contains alphabet or not
+print("_" * 80)
+str1 = '123san'
+print(str1, str1.isalnum()) # True
+
+# is alpha numeric - method checks only string or numeric contains alphabet or not
+print("_" * 80)
+str1 = '123'
+print(str1, str1.isalnum()) # True
+
+# is alpha numeric - method checks only string or numeric contains alphabet or not
+print("_" * 80)
+str1 = 'san'
+print(str1, str1.isalnum()) # True
+
+# is space - method checks presence of space
+print("_" * 80)
+str1 = '123 san'
+#print(str1, str1.isspace())
+for char in str1:
+    print(char, char.isspace()) # True
+
+# isascii - method checks presence of space
+print("_" * 80)
+str1 = '123 san'
+print(str1, str1.isascii()) # True
+
+# isascii - method checks presence of space
+print("_" * 80)
+for char in range(65,90):
+    print(char, chr(char))
+
+
 # Exercise 1
 #   program to get a string made of the first and the last 2 chars
 #   from a given string. If the string length is
@@ -317,18 +387,220 @@ for char in str1:
     else:
         print(f"{char} is consonant")
 
-
-
 # Exercise 8
 # longest and smallest word in the input string
 print("_" * 50)
 
 str1 = 'I am Santosh Rachotimath'
-vowels = ['a','e','i','o','u']
+output1 = str1.split(' ')
+print(output1)
+leng = temp = 0
+for word in output1:
+    leng = len(word)
+    if leng > temp:
+        temp1 = word
+    else:
+        continue
+
+print(temp1)
+
+
+# Exercise 9
+# Most simultaneously repeated character in string
+
+# Exercise 10
+# Python program to replace the second occurrence of any char with the special character $.
+print("_" * 50)
+
+str1 = 'Progr'
+str2 = '$'
+count = 0
+for char in str1:
+#    print(str1.count(char))
+    if str1.count(char) > 1:
+        count += 1
+        if count == 2:
+            output1 = str1.replace(char,str2)
+            print(output1)
+            count = 0
+    else:
+        continue
+
+
+# Exercise 10
+# program to get to swap the last character of a given string.
+print("_" * 50)
+
+str1 = 'santosh'
+
+print(str1[-1]+str1[1:-1]+str1[0])
+
+# Exercise 11
+# program to exchange the first and last character of each word from the given string.
+print("_" * 50)
+
+str1 = 'Its Online Learning'
+output1 = str1.split(' ')
+output2 = output1[0][-1]+output1[0][1:-1]+output1[0][0]+" "
+output3 = output1[1][-1]+output1[1][1:-1]+output1[1][0]+" "
+output4 = output1[2][-1]+output1[2][1:-1]+output1[2][0]+" "
+print(output2 + output3 +output4)
+
+# Exercise 12
+# program to exchange the first and last character of each word from the given string.
+print("_" * 50)
+count1 = 0
+
+str1 = 'We are learning python programming'
+list1 = str1.split(' ')
+vowels = 'aeiou'
+list2 = []
+for word in list1:
+    for char in word:
+        if char in vowels:
+            count1 += 1
+    list2.append(count1)
+    count1 = 0
+
+output = dict(zip(list1,list2))
+print(output)
+
+# Exercise 13
+# python to repeat vowels 3 times and consonants 2 times.
+print("_" * 50)
+
+str1 = 'SqA Tools Learning'
+vowels = 'aeiou'
+VOWELS = 'AEIOU'
+str2 = ''
 
 for char in str1:
-    if char in vowels:
-        print(f"{char} is vowel")
+    if char in vowels or VOWELS:
+        str2 = str2+char*3
     else:
-        print(f"{char} is consonant")
+        str2 = str2+char*2
+
+print(str2)
+
+# Exercise 14
+# python program to get all the digits from the given string.
+print("_" * 50)
+
+str1 = """
+Sinak’s 1112 aim is to 1773 create a new generation of people who
+understand 444 that an organization’s 5324 success or failure is
+based on 555 leadership excellence and not managerial
+acumen 
+"""
+list1 = str1.split(" ")
+list2 = []
+
+for char in list1:
+    if char.isnumeric():
+        list2.append(char)
+
+print(list2)
+
+# Exercise 15
+# python program to replace the words “Java” with “Python” in the given string.
+print("_" * 50)
+
+str1 = 'JAVA is the Best Programming Language in the Market'
+output = str1.replace('JAVA','Python')
+
+print(output)
+
+# Exercise 16
+# Python program to get all the palindrome words from the string.
+print("_" * 50)
+
+str1 = 'Python efe language aakaa hellolleh'
+list1 = str1.split(' ')
+list2 = []
+
+for word in list1:
+    if word == word[::-1]:
+        list2.append(word)
+print(list2)
+
+# Exercise 17
+# Python program to create a string with a given list of words.
+print("_" * 50)
+
+str1 = 'Python efe language aakaa hellolleh'
+list1 = ['There', 'are', 'Many', 'Programming', 'Language']
+output = ''
+
+for word in list1:
+    output = output + word + ' '
+output = output.capitalize()
+print(output)
+
+# Exercise 18
+# Python program to remove duplicate words from the string.
+print("_" * 50)
+
+str1 = 'John jany sabi row john sabi'
+list1 = str1.split(" ")
+output = ''
+
+for word in list1:
+    count = list1.count(word)
+    if count == 1:
+        output = output + word + " "
+print(output)
+
+# Exercise 19
+# to remove unwanted characters from the given string.
+print("_" * 50)
+
+str1 = 'Py(th)#@&on Pro$*#gram'
+output = ''
+
+for char in str1:
+#    count = list1.count(word)
+    if char.isalpha():
+        output = output + char
+print(output)
+
+# Exercise 20
+# program to find the longest capital letter word from the string.
+print("_" * 50)
+
+str1 = 'PROGRAMMING Learning PYTHON is FUN'
+list1 = str1.split(" ")
+output = ''
+leng = temp = 0
+for word in list1:
+    if word.isupper():
+        leng = len(word)
+        if leng > temp:
+            output = word
+            temp = leng
+print(output)
+
 '''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
