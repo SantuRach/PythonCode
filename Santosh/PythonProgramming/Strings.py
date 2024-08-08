@@ -579,13 +579,262 @@ for word in list1:
             temp = leng
 print(output)
 
+# Exercise 21
+# Python program to get common words from strings.
+print("_" * 50)
+
+str1 = 'Very Good Morning, How are You'
+str2 = 'You are a Good student, keep it up'
+list1 = str1.split(" ")
+list2 = str2.split(" ")
+list3 = []
+for word in list1:
+    if word in list2:
+        list3.append(word)
+print(list3)
+
+# Exercise 22
+# Python program to get common words from strings.
+print("_" * 50)
+
+str1 = 'sqqs'
+if str1 == str1[::-1]:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+# Exercise 23
+# program to calculate the frequency of each character in a string.
+print("_" * 50)
+dictionary = dict()
+
+str1 = 'sqatools'
+for char in str1:
+    dictionary[char] = str1.count(char)
+print(dictionary)
+
+
+# Exercise 24
+# program to combine two strings into one.
+print("_" * 50)
+str1 = 'abc'
+str2 = 'def'
+
+print(str1+str2)
+
+# Exercise 25
+# Write a program to check if a string has a number or not.
+print("_" * 50)
+str1 = 'sqatools'
+output = 'String dont have a number'
+for char in str1:
+    if char.isnumeric():
+        output = 'String have a number'
+print(output)
+
+# Exercise 26
+# program to count the number of vowels in a string.
+print("_" * 50)
+str1 = 'I am learning python'
+vowels = 'aeiouAEIOU'
+
+output = 0
+
+for char in str1:
+    if char in vowels:
+        output += 1
+print("Vowels count in str1: ", output)
+
+# Exercise 28
+# program to count the number of consonants in a string.
+print("_" * 50)
+str1 = 'I am learning python'
+vowels = 'aeiouAEIOU'
+
+output = 0
+
+for char in str1:
+    if char not in vowels:
+        output += 1
+print("consonants count in str1: ", output)
+
+# Exercise 29
+# program to remove all duplicate characters from a given string in python.
+print("_" * 50)
+str1 = 'sqatools'
+
+# Exercise 30
+# program to check if a string has a special character or not
+print("_" * 50)
+str1 = 'pythonsqatools'
+if str1.isalnum():
+    print("NO special character")
+else:
+    print("Has special character")
+
+# Exercise 31
+# program to exchange the first and last letters of the string
+print("_" * 50)
+str1 = 'We are learning python'
+
+print(str1[-1]+str1[1:-1:]+str1[0])
+
+# Exercise 32
+# program to convert all the characters in a string to Upper Case
+print("_" * 50)
+str1 = 'I live in pune'
+
+print(str1.upper())
+
+# Exercise 33
+# Write a program to remove a new line from a string using python
+print("_" * 50)
+str1 = 'objectorientedprogramming\n'
+
+print(str1.replace("\n", ""))
+
+# Exercise 34
+# python program to split and join a string
+print("_" * 50)
+str1 = 'Hello world'
+list1 = str1.split(" ")
+
+output = "-".join(list1)
+print(output)
+
+# Exercise 35
+# program to print floating numbers up to 3 decimal places and convert it to string
+print("_" * 50)
+str1 = 2.14652
+
+output = str(round(str1, 3))
+
+print(output, type(output))
+
+# Exercise 36
+# python program to find the location of a word in a string
+print("_" * 50)
+str1_inp = 'I am solving based on strings problems'
+str1 = 'problems'
+list1 = str1_inp.split(" ")
+print(list1)
+for word in list1:
+    if word == str1:
+        index = list1.index(word)
+        index += 1
+
+print(index)
+
+# below function can also be used directly
+print(list1.index(str1))
+
+
+# Exercise 37
+# python program to find the location of a word in a string
+print("_" * 50)
+str1_inp = 'I want to eat fast food @ food center food food food food food food'
+str1 = 'food'
+list1 = str1_inp.split(" ")
+print(list1)
+count = list1.count(str1)
+
+print(count)
+
+# Exercise 38
+# words greater than the given length
+print("_" * 50)
+str1_inp = 'We are learning python food'
+str1 = 3
+list1 = str1_inp.split(" ")
+print(list1)
+for word in list1:
+    leng = len(word)
+    if leng > str1:
+        print(word, end=" ")
+
+# Exercise 39
+# words greater than the given length
+print("_" * 50)
+str1_inp = 'Sqatools'
+
+print(str1_inp[0:4])
+
+# Exercise 40
+# Python program to get a string made of the first 2 and the last 2 chars from a given
+print("_" * 50)
+str1_inp = 'Sqatools'
+
+print(str1_inp[0:2]+str1_inp[-2:])
+
+# Exercise 41
+# program to print the mirror image of the string.
+print("_" * 50)
+str1_inp = 'Sqatools'
+
+print("Mirror image of", str1_inp, " is : ", str1_inp[::-1])
+
+# Exercise 42
+# python program to split strings on vowels
+print("_" * 50)
+str1_inp = 'qwertay'
+vowels = 'aeiouAEIOU'
+str1 = output = ''
+for char in str1_inp:
+    if char in vowels:
+        str1 = str1 + " "
+    else:
+        str1 += char
+print(str1)
+
+# Exercise 43
+# python program to replace multiple words with certain words. Replace python with SQA  and sqatools with TOOLS
+print("_" * 50)
+str1_inp = 'I’m learning python at Sqatools, python, Sqatools'
+
+str1 = str1_inp.replace('python', 'SQA')
+str1 = str1.replace('Sqatools', 'TOOLS')
+print(str1)
+
+# Exercise 44
+# python program to replace multiple words with certain words. Replace python with SQA  and sqatools with TOOLS
+print("_" * 50)
+str1_inp = 'I’m learning python at Sqatools, python, Sqatools'
+
+str1 = str1_inp.replace('python', 'SQA')
+str1 = str1.replace('Sqatools', 'TOOLS')
+print(str1)
+
+# Exercise 45
+# program to remove empty spaces from a list of strings.
+print("_" * 50)
+list1 = ['Python','','','Programming']
+
+list2 = []
+for word in list1:
+    if len(word) == 0:
+        continue
+    else:
+        list2.append(word)
+print(list2)
+
+
 '''
 
-
-
-
-
-
+# Exercise 46
+# python program to find duplicate characters in a string
+print("_" * 50)
+str1 = 'Santosh Rachotimath'
+str2 = ''
+for char in str1:
+    count = str1.count(char)
+    #print(char, count)
+    if count >= 2 and char not in str2:
+        #print(char, end="")
+        str2 = str2 + char
+    else:
+        continue
+    count = 0
+print(str2)
 
 
 
