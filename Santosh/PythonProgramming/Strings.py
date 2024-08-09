@@ -817,13 +817,10 @@ for word in list1:
         list2.append(word)
 print(list2)
 
-
-'''
-
 # Exercise 46
 # python program to find duplicate characters in a string
 print("_" * 50)
-str1 = 'Santosh Rachotimath'
+str1 = 'hello world'
 str2 = ''
 for char in str1:
     count = str1.count(char)
@@ -836,15 +833,305 @@ for char in str1:
     count = 0
 print(str2)
 
+# Exercise 47
+# Write a python program to sort a string
+print("_" * 50)
+str1 = 'xyabkmp'
+str2 = sorted(str1)
+
+print(str2, type(str2))
+print("".join(sorted(str1)))
+
+import random
+
+# Exercise 48
+# program to generate a random binary string of a given length.
+print("_" * 50)
+
+str1 = ''
+for i in range(0,8):
+    val = str(random.randint(0,1))
+    str1 += val
+print(str1)
 
 
+# Exercise 49
+# program to check if the substring is present in the string or not
+print("_" * 50)
+
+str1 = 'I live in Pune'
+str2 = 'I live'
+if str2 in str1:
+    print('Yes')
+else:
+    print('No')
+
+# Exercise 50
+# program to print the index of the character in a string.
+print("_" * 50)
+
+str1 = 'I live in Pune'
+print('Index of e is: ', str1.index('e'))
+
+# Exercise 51
+# Write a program to strip spaces from a string
+print("_" * 50)
+
+str1 = '                         I live in Pune      '
+print('Strip is: ', str1.strip())
+print('Strip is: ', str1.rstrip())
+print('Strip is: ', str1.lstrip())
+
+# Exercise 52
+# program to check whether a string contains all letters of the alphabet or not.
+print("_" * 50)
+
+# Exercise 53
+# program to check whether a string contains all letters of the alphabet or not.
+print("_" * 50)
+
+str1 = 'program to convert a string into a list of words.'
+list1 = list(str1.split(" "))
+print(list1)
+
+# Exercise 54
+# program to check whether a string contains all letters of the alphabet or not.
+print("_" * 50)
+
+str1 = 'sqa,to.,ols.'
+str2 = ''
+for char in str1:
+    if char == ',':
+        char = char.replace(char,'.')
+    elif char == '.':
+        char = char.replace('.', ',')
+    else:
+        char = char
+    str2 += char
+print(str2)
+
+# Exercise 55
+# program to split a string on the last occurrence of the delimiter.
+print("_" * 50)
+
+str1 = 'l,e,a,r,n,I,n,g,p,y,t,h,o,n'
+str2 = str1.rsplit(",",1)
+print(str2)
+
+# Exercise 56
+# program to find the first repeated word in a given string.
+print("_" * 50)
+
+str1 = 'ab bc ca ca bd'
+list1 = str1.split(" ")
+list2 = []
+for word in list1:
+    if word in list2:
+        print("Repeated word is : ", word)
+    else:
+        list2.append(word)
 
 
+# Exercise 57
+# program to find the second most repeated word in a given string
+print("_" * 50)
+
+# Exercise 58
+# Remove spaces from a given string
+print("_" * 50)
+str1 = "python at sqatools"
+str2 = str1.replace(' ','')
+print(str2)
+
+# Exercise 59
+#  program to capitalize the first and last letters of each word of a given string.
+print("_" * 50)
+str1 = "this is my first program"
+list1 = str1.split()
+str2 = ''
+
+for word in list1:
+    new_word = word[0].capitalize() + word[1:len(word)-1] + word[-1].capitalize() + ' '
+    str2 = str2 + new_word
+
+print(str2)
+
+# Exercise 60
+#  program to calculate the sum of digits of a given string.
+print("_" * 50)
+str1 = "12hrjk5sd7893"
+sum = 0
+
+for char in str1:
+    if char.isnumeric():
+        sum += int(char)
+
+print(sum)
+
+# Exercise 61
+#  program to remove zeros from an IP address.
+print("_" * 50)
+str1 = "289.03.02.054"
+str2 = ''
+for char in str1:
+    if char != '0':
+        str2 += char
+
+print(str2)
+
+# Exercise 62
+#  program to remove zeros from an IP address.
+print("_" * 50)
+str1 = "289.03.02.054"
+str2 = ''
+for char in str1:
+    if char != '0':
+        str2 += char
+
+print(str2)
+
+# Exercise 63
+#  program to find the maximum length of consecutive 0’s
+#  in a given binary string
+print("_" * 50)
+str1 = "10001100000111"
+count = 0
+
+for char in str1:
+    if char == '0':
+        count += 1
+        temp = count
+    else:
+        count = 0
+
+print(temp)
 
 
+# Exercise 64
+#  program to remove all consecutive duplicates of a given string
+print("_" * 50)
+str1 = "xxxxyyzzzzz"
+str2 = ''
 
+for char in str1:
+    if char not in str2:
+        str2 += char
 
+print(str2)
 
+# Exercise 65
+# Write a program to create strings from a given string.
+# Create a string that consists of multi-time occurring characters
+# in the said string using python.
+print("_" * 50)
+str1 = "aabbcceffgh"
+str2 = ''
+
+for char in str1:
+    count_char = str1.count(char)
+    if count_char > 1:
+        if char not in str2:
+            str2 += char
+
+print(str2)
+
+# Exercise 66
+# Write a program to count all the Uppercase, Lowercase, special character
+# and numeric values in a given string
+print("_" * 50)
+str1 = "@SqaTo3ols.lin&"
+upper = lower = digit = special = 0
+
+for char in str1:
+    if char.isupper():
+        upper += 1
+    elif char.islower():
+        lower += 1
+    elif char.isdigit():
+        digit += 1
+    else:
+        special += 1
+
+print("Upper count is : ", upper)
+print("lower count is : ", lower)
+print("digit count is : ", digit)
+print("special count is : ", special)
+
+# Exercise 67
+# program to uppercase half string using python.
+print("_" * 50)
+str1 = "Santosh"
+middle = len(str1)//2
+
+print(str1[0:middle]+str1[middle:].upper())
+
+# Exercise 68
+# program to remove the kth element from the string K =2
+print("_" * 50)
+str1 = "sqatools"
+k = 2
+
+print(str1[0:k]+str1[k+1:])
+
+# Exercise 69
+# program to reverse words in a string
+print("_" * 50)
+str1 = "string problems"
+list1 = str1.split(" ")
+
+print(" ".join(list1[::-1]))
+
+# Exercise 70
+# program to find the first repeated character in a string and its index.
+print("_" * 50)
+str1 = "sqatools"
+for char in str1:
+    count = str1.count(char)
+    if count > 1:
+        print(char, count)
+        break
+
+# Exercise 71
+# program to find the first repeated character in a string and its index.
+print("_" * 50)
+str1 = "sqaTOOls"
+for char in str1:
+    count = str1.count(char)
+    if count > 1:
+        print(char, count)
+        break
+
+# Exercise 72 Swap case
+str1 = str1.swapcase()
+print(str1)
+
+# Exercise 73
+# program to get all the email id’s from given string using python.
+print("_" * 50)
+str1 = """We have some employee whos john@gmail.com email id’s are
+randomly distributed jay@lic.com we want to get hari@facebook.com
+all the email mery@hotmail.com id’s from this given string."""
+
+str2 = '@'
+list1 = str1.split(" ")
+
+for word in list1:
+    if str2 in word:
+        print(word[0:word.index(str2)])
+'''
+
+# Exercise 74
+# program to get a list of all the mobile numbers from the given string
+print("_" * 50)
+str1 = """ We have 2233 some employee 8988858683 whos 3455 mobile numbers 
+are randomly distributed 2312245566 we want 453452 to get 4532892234 all 
+the mobile numbers 9999234355  from this given string. """
+
+list1 = str1.split(" ")
+
+for word in list1:
+    if len(word) == 10:
+        print(word, end =" ")
 
 
 
