@@ -1132,3 +1132,4 @@ list1 = str1.split(" ")
 for word in list1:
     if len(word) == 10:
         print(word, end =" ")
+
