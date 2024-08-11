@@ -4,3 +4,10 @@
 
 
 # 2. How to print values while cobverting Dict -> List ?
+
+
+# Unsolved programs
+# Exercise 8
+# Python list - program to print a combination of 2 elements from the list whose sum is 10.
+# Python list - program to generate all sublists with 5 or more elements in it from the given list.
+# Python program to combine two list elements as a sublist in a list..

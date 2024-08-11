@@ -1,5 +1,5 @@
 
-''''
+
 print("_" * 80)
 str1 = 'Hello'
 str2 = "Python programming"
@@ -1118,7 +1118,6 @@ list1 = str1.split(" ")
 for word in list1:
     if str2 in word:
         print(word[0:word.index(str2)])
-'''
 
 # Exercise 74
 # program to get a list of all the mobile numbers from the given string
