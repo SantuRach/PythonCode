@@ -10,4 +10,7 @@
 # Exercise 8
 # Python list - program to print a combination of 2 elements from the list whose sum is 10.
 # Python list - program to generate all sublists with 5 or more elements in it from the given list.
-# Python program to combine two list elements as a sublist in a list..
+# Python program to combine two list elements as a sublist in a list.
+# program to iterate over two lists simultaneously and create a list of sublists.
+# program to remove consecutive duplicates of given lists.
+# program to pack consecutive duplicates of given list elements into sublists..

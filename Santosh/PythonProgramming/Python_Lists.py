@@ -608,17 +608,142 @@ val = ''
 for i in list1:
     val += str(i)
 print(val)
-'''
 
 # Exercise 31
 # program to create a sublist of numbers and their squares from 1 to 10.
 print("_" * 50)
 
-list1 =  [[1, 1], [2, 4], [3, 9], [4, 16], [5, 25], [6, 36], [7, 49], [8, 64], [9, 81], [10, 100]]
+# list1 =  [[1, 1], [2, 4], [3, 9], [4, 16], [5, 25], [6, 36], [7, 49], [8, 64], [9, 81], [10, 100]]
 
+list1 = [(i, i**2) for i in range(1,11)]
 
+print(list1)
 
+# Exercise 32
+# program to create a list of five consecutive numbers in the list.
+print("_" * 50)
 
+list1 = [[i+j*5-5 for i in range(1,6)] for j in range(1,5)]
 
+print(list1)
+
+# Exercise 33
+# program to insert a given string at the beginning of all items in a list.
+print("_" * 50)
+
+list1 = [1,2,3,4,5]
+str1 = 'Sqa'
+list2 = []
+for val in list1:
+    char = str1+str(val)
+    list2.append(char)
+print(list2)
+
+# Exercise 34
+# program to iterate over two lists simultaneously and create a list of sublists.
+print("_" * 50)
+
+list1 = [1, 3, 5, 7, 9]
+list2 = [8, 6, 4, 2, 10]
+
+# Exercise 35
+# program to move all positive numbers on the left side and negative numbers on the right side.
+print("_" * 50)
+
+list1 = [2, -4, 6, 44, -7, 8, -1, -10]
+list2 = []
+for val in list1:
+    if val > 0:
+        list2.insert(0, val)
+    else:
+        list2.insert(len(list2), val)
+
+print(list2)
+
+# Exercise 36
+# program to move all zero digits to the end of a given list of numbers.
+print("_" * 50)
+
+list1 = [3, 4, 0, 0, 0, 0, 6, 0, 4, 0, 22, 0, 0, 3, 21, 0]
+list2 = []
+for val in list1:
+    if val != 0:
+        list2.insert(0, val)
+    else:
+        list2.insert(len(list2), val)
+
+print(list2)
+
+# Exercise 37
+# program to find the list in a list of lists whose sum of elements is the highest.
+print("_" * 50)
+
+list1 = [[11, 2, 3], [4, 15, 6], [10, 11, 12], [7, 8, 19]]
+
+sum_highest = 0
+
+for val1 in list1:
+    sum = 0
+    for val2 in val1:
+        sum += val2
+        if sum > sum_highest:
+            sum_highest = sum
+            list_highest = val1
+
+print(sum_highest)
+print(list_highest)
+
+# Exercise 38
+# program to count empty dictionaries from the given list.
+print("_" * 50)
+
+list1 = [{}, {'a': 'sqatools'}, [], {'a': 123}, {},{},()]
+empty_count = 0
+
+for val in list1:
+    if val == {}:
+        empty_count += 1
+
+print(empty_count)
+
+# Exercise 39
+# program to remove consecutive duplicates of given lists.
+print("_" * 50)
+
+list1 = [0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4]
+print(set(list1))
+leng = len(list1)
+
+for i in range(leng):
+    if list1[i] == list1[i+1]:
+        list1.remove(list1[i])
+        leng = len(list1)
+
+print(list1)
+
+# Exercise 40
+# program to split a given list into two parts where the length
+# of the first part of the list is given.
+print("_" * 50)
+
+list1 = [4, 6, 7, 3, 2, 5, 6, 7, 6, 4]
+length = 5
+
+list1 = [[list1[i] for i in range(0,length)], [list1[i] for i in range(length,len(list1))]]
+
+print(list1)
+'''
+
+# Exercise 41
+# program to insert items at a specific position in the list.
+print("_" * 50)
+
+list1 = [2, 4, 6, 8, 3, 22]
+ind = 3
+val = 55
+list1[ind] = val
+list1.index(list1[ind])
+
+print(list1)
 
 
