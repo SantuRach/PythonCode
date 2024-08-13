@@ -1,4 +1,3 @@
-'''
 
 """
 ################################# Python Lists #################################
@@ -732,7 +731,6 @@ length = 5
 list1 = [[list1[i] for i in range(0,length)], [list1[i] for i in range(length,len(list1))]]
 
 print(list1)
-'''
 
 # Exercise 41
 # program to insert items at a specific position in the list.
@@ -745,5 +743,529 @@ list1[ind] = val
 list1.index(list1[ind])
 
 print(list1)
+
+# Exercise 42
+# program to select random numbers from the list.
+print("_" * 50)
+
+# Exercise 42
+#  Python program to create a 3*3 grid with numbers.
+print("_" * 50)
+
+list1 = []
+for i in range(3):
+    list1.append([])
+    for j in range(4,7):
+        list1[i].append(j)
+
+print(list1)
+
+# Exercise 43
+# Python program to zip two lists of lists into a list.
+print("_" * 50)
+[([1, 3], [2, 4]), ([5, 7], [6, 8]), ([9, 11], [10, 12, 14])]
+list1 = [[1, 3], [5, 7], [9, 11]]
+list2 = [[2, 4], [6, 8], [10, 12, 14]]
+list3 = []
+for i in range(len(list1)):
+    list3.append((list1[i], list2[i]))
+
+print(list3)
+
+# method 2
+list3 = list(zip(list1, list2))
+print(list3)
+
+# Exercise 44
+# Python program to convert the first and last letter of
+# each item from Upper case and lowercase.
+print("_" * 50)
+
+list1 = ['Learn', 'python', 'From', 'Sqa', 'tools']
+list2 = []
+for word in list1:
+    list2.append(word[0].swapcase() + word[1:-1] + word[-1].swapcase())
+
+print(list1)
+print(list2)
+
+# Exercise 45
+# to find maximum and minimum values in the given heterogeneous list.
+print("_" * 50)
+
+list1 = ['san',1,2,3,'rach']
+list2 = []
+for value in list1:
+    if isinstance(value, int):
+        list2.append(value)
+
+print("Max:", max(list2))
+print("Min:", min(list2))
+
+# Exercise 46
+# program to sort a given list in ascending order according to the sum of its sublist.
+print("_" * 50)
+
+list1 = [[3, 5, 6], [2, 1, 3], [5, 1, 1], [1, 2, 1], [0, 4, 1]]
+highest_sum = 0
+sum1 = 0
+
+# Exercise 47
+# Python program to extract the specified sizes of strings from a given list
+# of string values.
+print("_" * 50)
+
+list1 = ['Python', 'Sqatools', 'Practice', 'Program', 'test', 'list']
+size = 8
+list2 = []
+for word in list1:
+    if len(word) == size:
+        list2.append(word)
+
+print(list2)
+
+# Exercise 48
+# program to find the difference between consecutive numbers in a given list.
+print("_" * 50)
+
+list1 = [1, 1, 3, 4, 4, 5, 6, 7]
+
+list2 = []
+for i in range(len(list1)-1):
+    diff = abs(list1[i] - list1[i+1])
+    list2.append(diff)
+print(list2)
+
+# Exercise 49
+# Python program to calculate the average of the given list.
+print("_" * 50)
+
+list1 = [3, 5, 7, 2, 6, 12, 3]
+
+
+print("Average :", sum(list1)/len(list1))
+
+# Exercise 50
+# program to count integers in a given mixed list.
+print("_" * 50)
+
+list1 = [3, 5, 7, 2, 6, 12, 3, 'Hello', 'Sqa']
+count = 0
+
+for val in list1:
+    if isinstance(val, int):
+        count += 1
+
+print(count)
+
+# Exercise 51
+# program to access multiple elements of the specified index from a given list.
+print("_" * 50)
+
+list1 = [2, 3, 4, 7, 8, 1, 5, 6, 2, 1, 8, 2]
+Index_list = [0, 3, 5, 6]
+list2 = []
+
+for val in Index_list:
+    list2.append(list1[val])
+
+print(list2)
+
+# Exercise 52
+# Python program to check whether a specified list is sorted or not.
+print("_" * 50)
+
+list1 = [1, 2, 3, 5, 7, 8, 9]
+list3 = sorted(list1)
+if list1 == list3:
+    print("Sorted")
+else:
+    print("Not Sorted")
+#############################################
+list1 = [3, 5, 1, 6, 8, 2, 4]
+list3 = sorted(list1)
+if list1 == list3:
+    print("Sorted")
+else:
+    print("Not Sorted")
+
+# Exercise 53
+# Python program to remove duplicate dictionaries from a given list.
+print("_" * 50)
+
+list1 = [{'name': 'john'}, {'city': 'mumbai'}, {'Python': 'laguage'}, {'name': 'john'}]
+list2 = []
+for val in list1:
+    if list1.count(val) <= 1:
+        list2.append(val)
+
+print(list2)
+
+# Exercise 54
+# Python program to check if the elements of a given list are unique or not.
+print("_" * 50)
+count = 1
+
+list1 = [2, 5, 6, 7, 4, 11, 66, 21, 22, 3]
+list2 = []
+for val in list1:
+    if list1.count(val) > 1:
+        count = 0
+        break
+
+if count == 1:
+    print("Unique")
+else:
+    print("Not Unique")
+
+# Exercise 55
+# program to remove duplicate sublists from the list.
+print("_" * 50)
+count = 1
+
+list1 = [[1, 2], [3, 5], [1, 2], [6, 7]]
+list2 = []
+for val in list1:
+    if list1.count(val) == 1:
+        list2.append(val)
+
+print(list2)
+
+# Exercise 56
+# Python program to create a list by taking an alternate item from the list.
+print("_" * 50)
+count = 1
+
+list1 = [3, 5, 7, 8, 2, 9, 3, 5, 11]
+list2 = []
+
+for i in range(len(list1)):
+    if i % 2 == 0:
+        list2.append(list1[i])
+
+print(list2)
+
+# Exercise 57
+# program to remove duplicate tuples from the list.
+print("_" * 50)
+count = 1
+
+list1 = [(2, 3), (4, 6), (5, 1), (2, 3), (7, 9), (5, 1)]
+list2 = []
+for val in list1:
+    if list2.count(val) < 1:
+        list2.append(val)
+
+print(list2)
+
+# Exercise 58
+# Python program to insert an element before each element of a list.
+print("_" * 50)
+count = 1
+
+list1 = [3, 5, 7, 8, 9]
+list2 = []
+ele = 'San'
+
+for i in range(0,len(list1)*2,2):
+    list1.insert(i, ele)
+
+print(list1)
+
+# Exercise 59
+# program to remove the duplicate string from the list.
+print("_" * 50)
+count = 1
+
+list1 = ['python', 'is', 'a', 'best', 'language', 'python', 'best']
+list2 = []
+for val in list1:
+    if list2.count(val) < 1:
+        list2.append(val)
+
+print(list2)
+
+# Exercise 60
+# program to get the factorial of each item in the list.
+print("_" * 50)
+
+
+list1 = [1, 2, 3, 4]
+list2 = []
+for val in list1:
+    fact = 1
+    for i in range(1, val+1):
+        fact = fact * i
+    list2.append(fact)
+
+print(list2)
+
+# Exercise 61
+# program to get a list of Fibonacci numbers from 1 to 20.
+print("_" * 50)
+
+list1 = []
+temp = 0
+f0 = f2 = 0
+f1 = 1
+for val in range(0,20):
+    list1.append(f0)
+    f2 = f0 + f1
+    f0 = f1
+    f1 = f2
+    print(list1)
+
+# Exercise 62
+# Python program to reverse all the numbers in a given list.
+print("_" * 50)
+
+list1 = [123, 145, 633, 654, 254]
+list2 = []
+for val in list1:
+    str_rev = str(val)
+    str_rev = str_rev[::-1]
+    str_rev = int(str_rev)
+    list2.append(str_rev)
+
+print(list2)
+
+# Exercise 63
+# Python program to get palindrome numbers from a given list.
+print("_" * 50)
+
+list1 = [121, 134, 354, 383, 892, 232]
+list2 = []
+for val in list1:
+    str_rev = str(val)
+    str_rev = str_rev[::-1]
+    str_rev = int(str_rev)
+    if val == str_rev:
+        list2.append(str_rev)
+
+print(list2)
+
+# Exercise 64
+# program to get a count of vowels in the given list.
+print("_" * 50)
+count = 0
+
+list1 = ['Learning', 'Python', 'From', 'SqaTool']
+vowels = 'aeiouAEIOU'
+for word in list1:
+    for char in word:
+        if char in vowels:
+            count += 1
+
+print(count)
+
+# Exercise 65
+# program to get the list of prime numbers in a given list.
+print("_" * 50)
+
+list1 = [11, 8, 7, 19, 6, 29]
+list2 = []
+
+for val in list1:
+    count = 0
+    for i in range(1, val//2):
+        if val % i == 0 :
+            count += 1
+    if count == 1:
+        print("Prime", val)
+        list2.append(val)
+    else:
+        print("Not Prime", val)
+
+print(list2)
+
+# Exercise 66
+# program to get a list with n elements removed from the left and right.
+print("_" * 50)
+
+list1 = [2, 5, 7, 9, 3, 4]
+
+print("Remove 1 element from left", list1[1:])
+print("Remove 1 element from right", list1[0:-1])
+print("Remove 1 element from left", list1[2:])
+print("Remove 1 element from right", list1[0:-2])
+
+
+# Exercise 67
+# program to create a dictionary with two lists.
+print("_" * 50)
+
+list1 = ['a', 'b', 'c', 'd', 'e']
+list2 = [234, 123, 456, 343, 223]
+
+temp = dict(zip(list1, list2))
+
+print(temp)
+
+# Exercise 68
+# Python program to remove the duplicate item from the list using set.
+print("_" * 50)
+
+list1 = [2, 5, 7, 8, 2, 3, 4, 12, 5, 6]
+
+list2 = set(list1)
+
+print(list2)
+
+
+# Exercise 69
+# Python program to calculate the bill per fruit purchased from a given fruits list.
+print("_" * 50)
+
+fruit_list_Price = [['apple', 30], ['mango', 50], ['banana', 20], ['lichi', 50]]
+fruit_quantity = [['apple', 2], ['mango', 10]]
+
+for fruit, quantity in fruit_quantity:
+    for fruit1, price in fruit_list_Price:
+        if fruit == fruit1:
+            print("Fruit :", fruit, '\n', "Bill :", quantity*price)
+
+
+# Exercise 70
+# Python program to calculate the bill per fruit purchased from a given fruits list.
+print("_" * 50)
+
+fruit_list_Price = [['apple', 30], ['mango', 50], ['banana', 20], ['lichi', 50]]
+fruit_quantity = [['apple', 2], ['mango', 10]]
+
+for fruit, quantity in fruit_quantity:
+    for fruit1, price in fruit_list_Price:
+        if fruit == fruit1:
+            print("Fruit :", fruit, '\n', "Bill :", quantity*price)
+
+
+# Exercise 71
+# program to flatten a given nested list structure.
+print("_" * 50)
+
+list1 = [0, 12, [22, 32], 42, 52, [62, 72, 82], [92, 102, 112, 122]]
+list2 = []
+for word in list1:
+    if type(word) is list:
+        for key in word:
+            list2.append(key)
+    else:
+        list2.append(word)
+
+print(list2)
+
+# Exercise 72
+# Python program to convert tuples in the list into a sublist.
+print("_" * 50)
+
+list1 = [(3, 5), (6, 8), (8, 11), (12, 14), (17, 23)]
+list2 = []
+for word in list1:
+    if type(word) is tuple:
+        word = list(word)
+        list2.append(word)
+    else:
+        list2.append(word)
+
+print(list2)
+
+# Exercise 73
+# Python program to create a dictionary from a sublist in a given list.
+print("_" * 50)
+
+list1 = [['a', 5], ['b', 8], ['c', 11], ['d', 14], ['e', 23]]
+list2 = []
+list3 = []
+for i, j in list1:
+    list2.append(i)
+    list3.append(j)
+
+list4 = dict(zip(list2, list3)) # zip converts 2 lists to one dict
+print(list4)
+
+
+# Exercise 74
+# program to replace ‘Java’ with ‘Python’ from the given list.
+print("_" * 50)
+
+list1 = ['Hello', 'student', 'are', 'learning', 'Java', 'Its', 'Java', 'Language']
+
+# Exercise 75
+# program to convert the 3rd character of each word to a capital
+# case from the given list.
+print("_" * 50)
+
+list1 = ['Hello', 'student', 'are', 'learning', 'Java', 'Its', 'Java', 'Language']
+list2 = []
+for word in list1:
+    if len(word) > 3:
+        word = (word[0:3] + word[3].upper() + word[4:])
+    list2.append(word)
+
+print(list2)
+
+# Exercise 76
+# Python program to remove the 2nd character of
+# each word from a given list.
+print("_" * 50)
+
+list1 = ['Hello', 'student', 'are', 'learning', 'is', 'Java', 'Its', 'Java', 'Language']
+list2 = []
+for word in list1:
+    word = (word[0:1] + word[2:])
+    list2.append(word)
+
+print(list2)
+
+# Exercise 77
+# program to get a length of each word and add it as a dictionary
+# from the given list.
+print("_" * 50)
+
+list1 = ['Hello', 'student', 'are', 'learning', 'is', 'Java', 'Its', 'Java', 'Language']
+list2 = []
+for word in list1:
+    list2.append(len(word))
+
+list3 = dict(zip(list1, list2))
+print([list3])
+
+# Exercise 78
+# program to get a length of each word and add it as a dictionary
+# from the given list.
+print("_" * 50)
+
+list1 = [{'Hello':5}, {'student': 7}, {'are': 3}, {'learning': 8}, {'Hello':5}, {'Language': 8}, {'are': 3}]
+dict1 = {}
+list2 = []
+for word in list1:
+    if word not in list2:
+        list2.append(word)
+
+print(list2)
+
+
+
+# Exercise 79
+# [22.4, 4.0, -16.22, -9.1, 11.0, -12.22, 14.2, -5.2, 17.5]
+print("_" * 50)
+
+list1 = [22.4, 4.0, -16.22, -9.1, 11.0, -12.22, 14.2, -5.2, 17.5]
+sum = 0
+
+for val in list1:
+    round(val)
+    sum += int(val)
+
+print(sum)
+
+
+
+
+
+
+
+
+
+
 
 

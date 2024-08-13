@@ -47,8 +47,8 @@ print(result)
 result = str2[0:-1] #Python programmin
 print(result)
 
-len= len(str2)
-result = str2[0:len+1] #Python programming
+leng = len(str2)
+result = str2[0:leng+1] #Python programming
 print(result)
 
 result = str2[-6:-9] #blank. not print anything. ALways left to right reading
@@ -318,12 +318,12 @@ for char in range(65,90):
 print("_" * 50)
 
 str1 = 'santosh'
-leng = len(str1)
-if leng<= 2:
+legth = len(str1)
+if legth <= 2:
     print("Invalid string")
 else:
     result1 = str1[0:2]
-    result2 = str1[leng-2:leng+1]
+    result2 = str1[legth-2:legth+1]
     print(result1, result2)
 
 # Exercise 2
@@ -484,7 +484,7 @@ print(str2)
 
 # Exercise 14
 # python program to get all the digits from the given string.
-print("_" * 50)
+print("_Santosh" * 50)
 
 str1 = """
 Sinak’s 1112 aim is to 1773 create a new generation of people who
