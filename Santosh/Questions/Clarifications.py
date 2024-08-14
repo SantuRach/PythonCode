@@ -25,6 +25,17 @@
 # Python Program to get the Standard deviation of the list element.
 # program to convert all numbers to binary format from a given list.
 # program to convert all the numbers into Roman numbers from the given list.
-# .
+
+# Tuple List programs.
+# Python tuple program to add row-wise elements in Tuple Matrix.
+# program to convert a tuple into a dictionary.
+# tuple program to remove tuples from the List having an element as None.
+# Python tuple program to sort a list of tuples by the first item.
+# tuple program to sort a list of tuples by the second item
+# tuple program to sort a list of tuples by the length of the tuple.
+#  program to sort a tuple by its float element.
+#  tuple program to compute the element-wise sum of tuples.
+#  uple program to extract digits from a list of tuples.
+#  .
 
 
