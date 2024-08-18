@@ -230,7 +230,7 @@ print(list1, id(list1))
 print(list2, id(list2))
 
 ####################### Deep copy #######################
-# shallow copy : consider we have two lists list_a and list_b, if we will assign list_a to list_b
+# Deep copy : consider we have two lists list_a and list_b, if we will assign list_a to list_b
 # then update the list_b, data. the changes done in list_b will not reflect in list_a
 # here new list is created. address location (reference) is new
 print("_" * 50)
