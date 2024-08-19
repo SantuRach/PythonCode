@@ -35,7 +35,31 @@
 # tuple program to sort a list of tuples by the length of the tuple.
 #  program to sort a tuple by its float element.
 #  tuple program to compute the element-wise sum of tuples.
-#  uple program to extract digits from a list of tuples.
+#  Tuple program to extract digits from a list of tuples.
+
+#  Dictionary programs.
+#  Dictionary program to sort a dictionary using keys.
+#  program to get the size of a dictionary.
+#  program to group the same items into a dictionary value.
 #  .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
