@@ -706,31 +706,4 @@ dict1 = {'virat':[50,30],'rohit':[40,10]}
 #  program to extract a list of values from a given list of dictionaries
 print("_" * 25, '# Exercise 46', "_" * 25)
 
-dict1 = {'virat':[50,30],'rohit':[40,10]}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+dict1 = {'virat': [50, 30], 'rohit': [40, 10]}
