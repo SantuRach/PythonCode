@@ -501,8 +501,236 @@ for key, val in dict1.items():
 
 print(str1)
 
-'''
-
 # program to remove duplicate values from dictionary values.
 print("_" * 25, '# Exercise 25', "_" * 25)
+dict1 = {'marks1': [23, 28, 23, 69], 'marks2': [25, 14, 25]}
+
+for key, val in dict1.items():
+    dict1[key] = set(val)
+
+print(dict1)
+
+# program to add two dictionaries if the keys are the same then add their value.
+print("_" * 25, '# Exercise 26', "_" * 25)
+dict1 = {'x': 10, 'y': 20, 'c': 50, 'f': 44}
+dict2 = {'x': 60, 'c': 25, 'y': 56}
+dict3 = {}
+
+for key1, val1 in dict1.items():
+    for key2, val2 in dict2.items():
+        if key1 == key2:
+            dict3[key1] = val1 + val2
+
+print(dict3)
+
+# program to print all the unique values in a dictionary.
+print("_" * 25, '# Exercise 27', "_" * 25)
+list1 = [{'name1': 'robert'}, {'name2': 'john'}, {'name3': 'jim'}, {'name4': 'robert'}]
+list2 = []
+for word in list1:
+    for val in word.values():
+        if val not in list2:
+            list2.append(val)
+
+print(list2)
+
+# program to display different combinations of letters from dictionary values.
+print("_" * 25, '# Exercise 28', "_" * 25)
+dict1 = { 'x':[e,f], 'y':[a,b]}
+
+# program to print the given dictionary in the form of tables.
+print("_" * 25, '# Exercise 29', "_" * 25)
+dict1 = {'names':['virat','messi','kobe'], 'sport':['cricket','football','basketball']}
+
+# program to sort a list of values in a dictionary.
+print("_" * 25, '# Exercise 30', "_" * 25)
+dict1 = {'a1': [1, 5, 3], 'a2': [10, 6, 20]}
+
+for key, val in dict1.items():
+    dict1[key] = sorted(val)
+
+print(dict1)
+
+# program to get a product with the highest price from a dictionary.
+print("_" * 25, '# Exercise 31', "_" * 25)
+dict1 = { 'price1' : 450, 'price2' : 600, 'price3' : 255, 'price4' : 400}
+high = 0
+
+for word in dict1:
+    if dict1[word]> high:
+        high = dict1[word]
+        high_word = word
+
+print(high_word, high)
+
+# program to print a dictionary line by line.
+print("_" * 25, '# Exercise 32', "_" * 25)
+dict1 = {'virat': {'sport':'cricket', 'team':'india'}, 'messi': {'sport':'football', 'team':'argentina'}}
+
+for key1, val1 in dict1.items():
+    print(key1)
+    for key2, val2 in val1.items():
+        print(key2, ':', val2)
+    print()
+
+# program to print a dictionary line by line.
+print("_" * 25, '# Exercise 33', "_" * 25)
+dict1 = {'sqa': [1, 4, 6], 'tools': [3, 6, 9]}
+list1 = []
+for key1, val1 in dict1.items():
+    val1.insert(0, key1)
+    list1.append(val1)
+
+print(list1)
+
+# program to convert a list of dictionaries to a list of lists.
+print("_" * 25, '# Exercise 34', "_" * 25)
+list1 = [{'sqa': 123, 'tools': 456, 'sqa1': 123, 'tools1': 456}]
+list2 = []
+for word in list1:
+    for key1, val1 in word.items():
+        list2.append([key1])
+        list2.append([val1])
+
+print(list2)
+
+# program to replace dictionary values with their average.
+print("_" * 25, '# Exercise 35', "_" * 25)
+dict1 = {'name': 'ketan', 'subject': 'maths', 'p1': 80, 'p2': 70}
+num1 = dict1.pop('p1')
+num2 = dict1.pop('p2')
+dict1['p1+p2'] = (num1+num2)/2
+
+print(dict1)
+
+#  program to convert a list of Tuples into a dictionary
+print("_" * 25, '# Exercise 36', "_" * 25)
+list1 = [('mike', 1), ('Sarah', 20), ('Jim', 16)]
+dict1 = {}
+
+for word in list1:
+    dict1[word[0]] = word[1]
+
+print(dict1)
+
+#  program to convert string to the dictionary.
+print("_" * 25, '# Exercise 37', "_" * 25)
+str1 = 'Apr=April; Mar=March'
+dict1 = {}
+list1 = str1.split("; ")
+for word in list1:
+    dict1[word[0:3]] = word[4:]
+
+print(dict1)
+
+#  program to convert a matrix into a dictionary.
+print("_" * 25, '# Exercise 38', "_" * 25)
+list1 = [[1,2,3],[4,5,6]]
+dict1 = {}
+
+for i in range(len(list1)):
+    dict1[i+1] = list1[i]
+
+print(dict1)
+
+#  program to check all values are the same in a dictionary.
+print("_" * 25, '# Exercise 39', "_" * 25)
+
+dict1 = {'virat':50, 'rohit':50, 'rahul':50, 'hardik':50}
+temp = dict1['virat']
+count = 0
+
+for val in dict1.values():
+    if val == temp:
+        count += 1
+
+if count == len(dict1):
+    print('All values are same')
+else:
+    print('All values are not same')
+
+#  program to create a dictionary grouping a sequence of key-value pairs into a dictionary of lists.
+print("_" * 25, '# Exercise 40', "_" * 25)
+
+dict1 = {'virat':50, 'rohit':40, 'virat':30, 'rohit':10}
+
+#  program to split a given dictionary of lists into list of dictionaries.
+# [ {t20:50, odi:70} ,{t20:40, odi:10}, {t20:30, odi:0}, {t20:45, odi:65} ]
+print("_" * 25, '# Exercise 41', "_" * 25)
+
+dict1 = {'t20': [50, 40, 30, 45], 'odi': [70, 10, 0, 65]}
+
+#  program to remove a specified dictionary from a given list.
+# Remove 4th dict
+print("_" * 25, '# Exercise 42', "_" * 25)
+
+list1 = [{'t20': 50, 'odi': 70}, {'t20': 40, 'odi': 10}, {'t20': 30, 'odi': 0}, {'t20': 45, 'odi': 65}]
+
+list1.pop(3)
+
+print(list1)
+
+#  program to convert string values of a given dictionary, into integer/float datatypes.
+# Remove 4th dict
+print("_" * 25, '# Exercise 43', "_" * 25)
+
+dict1 = { 'a': '30',  'b': '20', 'c': '20'}
+dict2 = { 'a': '3.33', 'b': '20.50', 'c': '12.5'}
+
+for key1, val1 in dict1.items():
+    dict1[key1] = int(val1)
+
+for key2, val2 in dict2.items():
+    dict2[key2] = float(val2)
+
+print(dict1)
+print(dict2)
+
+#  Python dictionary contains a list as a value. Python program to clear the list values in the said dictionary.
+print("_" * 25, '# Exercise 44', "_" * 25)
+
+dict1 = {'virat':[50,30],'rohit':[40,10]}
+
+for val in dict1.values():
+    val.clear()
+
+print(dict1)
+
+#  Python dictionary contains a list as a value. Python program to clear the list values in the said dictionary.
+print("_" * 25, '# Exercise 45', "_" * 25)
+
+dict1 = {'virat':[50,30],'rohit':[40,10]}
+
+'''
+
+#  program to extract a list of values from a given list of dictionaries
+print("_" * 25, '# Exercise 46', "_" * 25)
+
+dict1 = {'virat':[50,30],'rohit':[40,10]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

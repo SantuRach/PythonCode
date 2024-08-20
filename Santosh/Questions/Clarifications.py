@@ -41,6 +41,13 @@
 #  Dictionary program to sort a dictionary using keys.
 #  program to get the size of a dictionary.
 #  program to group the same items into a dictionary value.
+#  program to display different combinations of letters from dictionary values.
+#  print the given dictionary in the form of tables.
+#  program to convert a list into a nested dictionary of keys.
+#  program to sort items in a dictionary in descending order.
+#  program to create a dictionary grouping a sequence of key-value pairs into a dictionary of lists.
+#  program to split a given dictionary of lists into list of dictionaries.
+#  Python dictionary contains a list as a value. Python program to clear the list values in the said dictionary.
 #  .
 
 
