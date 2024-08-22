@@ -701,9 +701,87 @@ print("_" * 25, '# Exercise 45', "_" * 25)
 
 dict1 = {'virat':[50,30],'rohit':[40,10]}
 
-'''
-
 #  program to extract a list of values from a given list of dictionaries
 print("_" * 25, '# Exercise 46', "_" * 25)
 
-dict1 = {'virat': [50, 30], 'rohit': [40, 10]}
+list1 = [ { 't20':50, 'odi':70 }, { 't20':40, 'odi':10 }, { 't20':30, 'odi':0 }, { 't20':45, 'odi':65 } ]
+list_t20 = []
+list_odi = []
+for word in list1:
+    print(len(word)) # to cover other exercise
+    for key, val in word.items():
+        if key == 't20':
+            list_t20.append(val)
+        else:
+            list_odi.append(val)
+
+print(list_t20)
+print(list_odi)
+
+#  program to create nested Dictionary using List.
+print("_" * 25, '# Exercise 47', "_" * 25)
+
+dict1 = { 8:'sqa', 6:'tools', 7:'python' }
+list1 = [1,2,3]
+list2 = []
+
+for word in dict1.items():
+    list2.append(word)
+dict2 = dict(zip(list1, list2))
+print(dict2)
+
+#  program to remove keys with values greater than n.
+print("_" * 25, '# Exercise 48', "_" * 25)
+
+dict1 = { 'sqa':3, 'tools':5, 'python':7 }
+rem_val = 6
+dict2 = {}
+
+for key, val in dict1.items():
+    if val < rem_val:
+        dict2[key] = val
+print(dict2)
+
+#  program to remove keys with substring values.
+print("_" * 25, '# Exercise 49', "_" * 25)
+
+dict1 = { 1:'sqatools is best', 2: 'for learning python'}
+substr = ['best',' excellent']
+
+dict2 = {}
+
+'''
+
+#  program to filter even numbers from a given dictionary value.
+print("_" * 25, '# Exercise 50', "_" * 25)
+
+dict1 = { 'a': [11, 4, 6, 15],  'b': [3, 8, 12],  'c': [5, 3, 10] }
+
+print(dict1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

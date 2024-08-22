@@ -48,7 +48,10 @@
 #  program to create a dictionary grouping a sequence of key-value pairs into a dictionary of lists.
 #  program to split a given dictionary of lists into list of dictionaries.
 #  Python dictionary contains a list as a value. Python program to clear the list values in the said dictionary.
-#    .
+#  program to get the depth of the dictionary.
+#  program to remove keys with substring values.
+#   program to filter even numbers from a given dictionary value.
+#   .
 
 
 
