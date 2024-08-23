@@ -51,6 +51,9 @@
 #  program to get the depth of the dictionary.
 #  program to remove keys with substring values.
 #   program to filter even numbers from a given dictionary value.
+#   program to retrieve the value of the nested key indicated by the given selector list from a dictionary or list.
+#   program to initialize a dictionary with default values.
+#   program to Sort dictionaries list by Key’s Value list index.
 #   .
 
 

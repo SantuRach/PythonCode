@@ -1,13 +1,3 @@
-'''
-
-
-
-
-
-
-
-
-
 """
 ################################# Python Dictionary #################################
 
@@ -268,14 +258,14 @@ print(dict1)
 
 # program to print the square of all values in a dictionary.
 print("_" * 25, '# Exercise 2', "_" * 25)
-dict1 = {'a': 5, 'b':3, 'c': 6, 'd' : 8}
+dict1 = {'a': 5, 'b': 3, 'c': 6, 'd': 8}
 
 for key, val in dict1.items():
-    print('Square of ', key,':', val**2)
+    print('Square of ', key, ':', val ** 2)
 
 # program to move items from dict1 to dict2.
 print("_" * 25, '# Exercise 3', "_" * 25)
-dict1 = {'a': 5, 'b':3, 'c': 6, 'd' : 8}
+dict1 = {'a': 5, 'b': 3, 'c': 6, 'd': 8}
 dict2 = {}
 for key, val in dict1.items():
     dict2[key] = val
@@ -285,15 +275,15 @@ print(dict2)
 
 # program to concatenate two dictionaries.
 print("_" * 25, '# Exercise 4', "_" * 25)
-dict1 = {'Name': 'Santosh', 'Roll no': 2807 , 'Address': 'Bangalore'}
-dict2 = {'Age' : 36, 'salary': '$25k'}
+dict1 = {'Name': 'Santosh', 'Roll no': 2807, 'Address': 'Bangalore'}
+dict2 = {'Age': 36, 'salary': '$25k'}
 
 dict1.update(dict2)
 print(dict1)
 
 # program to get a list of odd and even keys from the dictionary.
 print("_" * 25, '# Exercise 5', "_" * 25)
-dict1 = {1: 25, 5:'abc', 8:'pqr', 21:'xyz', 12:'def', 2:'utv'}
+dict1 = {1: 25, 5: 'abc', 8: 'pqr', 21: 'xyz', 12: 'def', 2: 'utv'}
 dict1_Even = {}
 dict1_Odd = {}
 
@@ -309,7 +299,7 @@ print('Odd :', dict1_Odd)
 print("_" * 25, '# Exercise 6', "_" * 25)
 list1 = ['a', 'b', 'c', 'd', 'e']
 list2 = [12, 23, 24, 25, 15, 16]
-dict1 = dict(zip(list1,list2))
+dict1 = dict(zip(list1, list2))
 
 print('dict from 2 lists :', dict1)
 
@@ -321,7 +311,7 @@ dict1 = {}
 
 for val in list1:
     if val % 2 == 0:
-        dict1[val]= val**2
+        dict1[val] = val ** 2
     else:
         dict1[val] = val ** 3
 
@@ -361,15 +351,15 @@ print(dict2)
 
 # Dictionary program to sort a dictionary using keys.
 print("_" * 25, '# Exercise 11', "_" * 25)
-dict1 = {'d' : 21, 'b' : 53,  'a': 13, 'c': 41}
+dict1 = {'d': 21, 'b': 53, 'a': 13, 'c': 41}
 
 # Dprogram to sort a dictionary in  python using values.
 print("_" * 25, '# Exercise 12', "_" * 25)
-dict1 = {'d' : 21, 'b' : 53,  'a': 13, 'c': 41}
+dict1 = {'d': 21, 'b': 53, 'a': 13, 'c': 41}
 
 # program to add a key in a dictionary.
 print("_" * 25, '# Exercise 12', "_" * 25)
-dict1 = Input = {'name':'yash', 'city': 'pune'}
+dict1 = Input = {'name': 'yash', 'city': 'pune'}
 dict2 = {}
 for key, val in dict1.items():
     dict2[val] = key
@@ -378,7 +368,7 @@ print(dict2)
 
 # program to get the sum of all the items in a dictionary.
 print("_" * 25, '# Exercise 13', "_" * 25)
-dict1 = {'x' : 23, 'y' : 10 , 'z' : 7}
+dict1 = {'x': 23, 'y': 10, 'z': 7}
 sum = 0
 
 for key, val in dict1.items():
@@ -389,7 +379,7 @@ print(sum)
 # program to get the size of a dictionary.
 # Hint : use sys.getsizeof(var) method.
 print("_" * 25, '# Exercise 14', "_" * 25)
-dict1 = {'x' : 23, 'y' : 10 , 'z' : 7}
+dict1 = {'x': 23, 'y': 10, 'z': 7}
 
 # program to check whether a key exists in the dictionary or not.
 print("_" * 25, '# Exercise 15', "_" * 25)
@@ -411,8 +401,8 @@ print("_" * 25, '# Exercise 16', "_" * 25)
 n = 10
 dict1 = {}
 
-for i in range(1,n+1):
-    dict1[i] = i**3
+for i in range(1, n + 1):
+    dict1[i] = i ** 3
 
 print(dict1)
 
@@ -430,15 +420,15 @@ print("_" * 25, '# Exercise 18', "_" * 25)
 n = 5
 dict1 = {}
 
-for i in range(1,n+1):
-    dict1[i] = i**2
+for i in range(1, n + 1):
+    dict1[i] = i ** 2
 
 print(dict1)
 
 # program to find the product of all items in the dictionary.
 print("_" * 25, '# Exercise 19', "_" * 25)
 
-dict1 = { 'a' : 2, 'b' : 4, 'c' : 5}
+dict1 = {'a': 2, 'b': 4, 'c': 5}
 prod = 1
 
 for val in dict1.values():
@@ -463,7 +453,7 @@ print(dict1)
 # program to find maximum and minimum values in a dictionary.
 print("_" * 25, '# Exercise 21', "_" * 25)
 
-dict1 = {'a': 10, 'b': 44, 'c': 5,  'd': 560}
+dict1 = {'a': 10, 'b': 44, 'c': 5, 'd': 560}
 list1 = []
 for val in dict1.values():
     list1.append(val)
@@ -479,7 +469,7 @@ list1 = [1, 3, 4, 4, 2, 5, 3, 1, 5, 5, 2]
 # program to replace words in a string using a dictionary.
 print("_" * 25, '# Exercise 23', "_" * 25)
 str1 = 'learning python at sqa-tools'
-dict1 = { 'at' : 'is', 'sqa-tools' : 'fun'}
+dict1 = {'at': 'is', 'sqa-tools': 'fun'}
 
 list1 = str1.split(" ")
 
@@ -497,7 +487,7 @@ str1 = 'sqatools is best for learning python'
 dict1 = {'best': 2, 'learning': 6, 'sqa': 5}
 
 for key, val in dict1.items():
-    str1 = str1.replace(key,'')
+    str1 = str1.replace(key, '')
 
 print(str1)
 
@@ -536,11 +526,11 @@ print(list2)
 
 # program to display different combinations of letters from dictionary values.
 print("_" * 25, '# Exercise 28', "_" * 25)
-dict1 = { 'x':[e,f], 'y':[a,b]}
+dict1 = {'x': ['e', 'f'], 'y': ['a', 'b']}
 
 # program to print the given dictionary in the form of tables.
 print("_" * 25, '# Exercise 29', "_" * 25)
-dict1 = {'names':['virat','messi','kobe'], 'sport':['cricket','football','basketball']}
+dict1 = {'names': ['virat', 'messi', 'kobe'], 'sport': ['cricket', 'football', 'basketball']}
 
 # program to sort a list of values in a dictionary.
 print("_" * 25, '# Exercise 30', "_" * 25)
@@ -553,11 +543,11 @@ print(dict1)
 
 # program to get a product with the highest price from a dictionary.
 print("_" * 25, '# Exercise 31', "_" * 25)
-dict1 = { 'price1' : 450, 'price2' : 600, 'price3' : 255, 'price4' : 400}
+dict1 = {'price1': 450, 'price2': 600, 'price3': 255, 'price4': 400}
 high = 0
 
 for word in dict1:
-    if dict1[word]> high:
+    if dict1[word] > high:
         high = dict1[word]
         high_word = word
 
@@ -565,7 +555,7 @@ print(high_word, high)
 
 # program to print a dictionary line by line.
 print("_" * 25, '# Exercise 32', "_" * 25)
-dict1 = {'virat': {'sport':'cricket', 'team':'india'}, 'messi': {'sport':'football', 'team':'argentina'}}
+dict1 = {'virat': {'sport': 'cricket', 'team': 'india'}, 'messi': {'sport': 'football', 'team': 'argentina'}}
 
 for key1, val1 in dict1.items():
     print(key1)
@@ -599,7 +589,7 @@ print("_" * 25, '# Exercise 35', "_" * 25)
 dict1 = {'name': 'ketan', 'subject': 'maths', 'p1': 80, 'p2': 70}
 num1 = dict1.pop('p1')
 num2 = dict1.pop('p2')
-dict1['p1+p2'] = (num1+num2)/2
+dict1['p1+p2'] = (num1 + num2) / 2
 
 print(dict1)
 
@@ -625,18 +615,18 @@ print(dict1)
 
 #  program to convert a matrix into a dictionary.
 print("_" * 25, '# Exercise 38', "_" * 25)
-list1 = [[1,2,3],[4,5,6]]
+list1 = [[1, 2, 3], [4, 5, 6]]
 dict1 = {}
 
 for i in range(len(list1)):
-    dict1[i+1] = list1[i]
+    dict1[i + 1] = list1[i]
 
 print(dict1)
 
 #  program to check all values are the same in a dictionary.
 print("_" * 25, '# Exercise 39', "_" * 25)
 
-dict1 = {'virat':50, 'rohit':50, 'rahul':50, 'hardik':50}
+dict1 = {'virat': 50, 'rohit': 50, 'rahul': 50, 'hardik': 50}
 temp = dict1['virat']
 count = 0
 
@@ -652,7 +642,7 @@ else:
 #  program to create a dictionary grouping a sequence of key-value pairs into a dictionary of lists.
 print("_" * 25, '# Exercise 40', "_" * 25)
 
-dict1 = {'virat':50, 'rohit':40, 'virat':30, 'rohit':10}
+dict1 = {'virat': 50, 'rohit': 40, 'virat': 30, 'rohit': 10}
 
 #  program to split a given dictionary of lists into list of dictionaries.
 # [ {t20:50, odi:70} ,{t20:40, odi:10}, {t20:30, odi:0}, {t20:45, odi:65} ]
@@ -674,8 +664,8 @@ print(list1)
 # Remove 4th dict
 print("_" * 25, '# Exercise 43', "_" * 25)
 
-dict1 = { 'a': '30',  'b': '20', 'c': '20'}
-dict2 = { 'a': '3.33', 'b': '20.50', 'c': '12.5'}
+dict1 = {'a': '30', 'b': '20', 'c': '20'}
+dict2 = {'a': '3.33', 'b': '20.50', 'c': '12.5'}
 
 for key1, val1 in dict1.items():
     dict1[key1] = int(val1)
@@ -689,7 +679,7 @@ print(dict2)
 #  Python dictionary contains a list as a value. Python program to clear the list values in the said dictionary.
 print("_" * 25, '# Exercise 44', "_" * 25)
 
-dict1 = {'virat':[50,30],'rohit':[40,10]}
+dict1 = {'virat': [50, 30], 'rohit': [40, 10]}
 
 for val in dict1.values():
     val.clear()
@@ -699,16 +689,16 @@ print(dict1)
 #  Python dictionary contains a list as a value. Python program to clear the list values in the said dictionary.
 print("_" * 25, '# Exercise 45', "_" * 25)
 
-dict1 = {'virat':[50,30],'rohit':[40,10]}
+dict1 = {'virat': [50, 30], 'rohit': [40, 10]}
 
 #  program to extract a list of values from a given list of dictionaries
 print("_" * 25, '# Exercise 46', "_" * 25)
 
-list1 = [ { 't20':50, 'odi':70 }, { 't20':40, 'odi':10 }, { 't20':30, 'odi':0 }, { 't20':45, 'odi':65 } ]
+list1 = [{'t20': 50, 'odi': 70}, {'t20': 40, 'odi': 10}, {'t20': 30, 'odi': 0}, {'t20': 45, 'odi': 65}]
 list_t20 = []
 list_odi = []
 for word in list1:
-    print(len(word)) # to cover other exercise
+    print(len(word))  # to cover other exercise
     for key, val in word.items():
         if key == 't20':
             list_t20.append(val)
@@ -721,8 +711,8 @@ print(list_odi)
 #  program to create nested Dictionary using List.
 print("_" * 25, '# Exercise 47', "_" * 25)
 
-dict1 = { 8:'sqa', 6:'tools', 7:'python' }
-list1 = [1,2,3]
+dict1 = {8: 'sqa', 6: 'tools', 7: 'python'}
+list1 = [1, 2, 3]
 list2 = []
 
 for word in dict1.items():
@@ -733,7 +723,7 @@ print(dict2)
 #  program to remove keys with values greater than n.
 print("_" * 25, '# Exercise 48', "_" * 25)
 
-dict1 = { 'sqa':3, 'tools':5, 'python':7 }
+dict1 = {'sqa': 3, 'tools': 5, 'python': 7}
 rem_val = 6
 dict2 = {}
 
@@ -745,43 +735,185 @@ print(dict2)
 #  program to remove keys with substring values.
 print("_" * 25, '# Exercise 49', "_" * 25)
 
-dict1 = { 1:'sqatools is best', 2: 'for learning python'}
-substr = ['best',' excellent']
+dict1 = {1: 'sqatools is best', 2: 'for learning python'}
+substr = ['best', ' excellent']
 
 dict2 = {}
-
-'''
 
 #  program to filter even numbers from a given dictionary value.
 print("_" * 25, '# Exercise 50', "_" * 25)
 
-dict1 = { 'a': [11, 4, 6, 15],  'b': [3, 8, 12],  'c': [5, 3, 10] }
+dict1 = {'a': [11, 4, 6, 15], 'b': [3, 8, 12], 'c': [5, 3, 10]}
+
+#  program to find the keys of maximum values in a given dictionary.
+#  Find keys of first 2 max values from the dictionary.
+print("_" * 25, '# Exercise 51', "_" * 25)
+
+dict1 = {'a': 18, 'b': 50, 'c': 36, 'd': 47, 'e': 60}
+list1 = []
+
+for val in dict1.values():
+    list1.append(val)
+
+res = sorted(list1)
+for key1, val1 in dict1.items():
+    if val1 == res[-1] or val1 == res[-2]:
+        print(key1, end=" ")
+
+#  program to find the shortest list of values with the keys in a given dictionary.
+print("_" * 25, '# Exercise 52', "_" * 25)
+
+dict1 = {'a': [10, 12], 'b': [10], 'c': [10, 20, 30, 40], 'd': [20]}
+
+for key, val in dict1.items():
+    if len(val) == 1:
+        print(key)
+
+#  program to count the frequency in a given dictionary.
+print("_" * 25, '# Exercise 53', "_" * 25)
+
+dict1 = {'a': 10, 'b': 20, 'c': 25, 'd': 10, 'e': 30, 'f': 20}
+list1 = []
+dict2 = {}
+for key, val in dict1.items():
+    list1.append(val)
+
+for ele in list1:
+    count = list1.count(ele)
+    dict2[ele] = count
+
+print(dict2)
+
+#  program to create key-value list pairings in a given dictionary.
+print("_" * 25, '# Exercise 54', "_" * 25)
+
+dict1 = {1: ['Virat Kohli'], 2: ['Rohit Sharma'], 3: ['Hardik Pandya']}
+list1 = []
+dict2 = {}
+for key, val in dict1.items():
+    val = str(val)
+    dict2[key] = val[2:-2]
+print([dict2])
+
+#  program to group the elements of a given list based on the given function.
+#  Hint : Function name: len().
+print("_" * 25, '# Exercise 55', "_" * 25)
+
+list1 = ['abc', 'defg', 'hijkl']
+dict2 = {}
+for word in list1:
+    dict2[len(word)] = word
+print([dict2])
+
+#  program to initialize a dictionary with default values.
+print("_" * 25, '# Exercise 56', "_" * 25)
+
+list1 = ['Virat', 'Rohit']
+dict1 = {'sport': 'cricket', 'salary': 100000}
+
+#  program to delete a list of keys from a dictionary.
+#  Keys to be removed:  [ ‘a’, ‘d’, ‘e’ ].
+print("_" * 25, '# Exercise 58', "_" * 25)
+
+dict1 = {'a': 19, 'b': 20, 'c': 21, 'd': 20, 'e': 50}
+
+dict1.pop('a')
+dict1.pop('d')
+dict1.pop('e')
 
 print(dict1)
 
+#method 2
+dict1 = {'a': 19, 'b': 20, 'c': 21, 'd': 20, 'e': 50}
+del_key = ['a', 'd', 'e']
 
+for key in del_key:
+    del dict1[key]
 
+print(dict1)
 
+#  program to rename key of a dictionary.
+print("_" * 25, '# Exercise 59', "_" * 25)
 
+dict1 = {'a': 19, 'b': 20, 'c': 21, 'd': 20, 'e': 50}
 
+dict1['f'] = dict1.pop('e')
+print(dict1)
 
+#  program to Invert a given dictionary with non-unique hashable values.
+print("_" * 25, '# Exercise 60', "_" * 25)
 
+dict1 = {'alex': 1, 'bob': 2, ' martin': 1, 'robert': 2}
+list1 = []
+list2 = []
+list3 = []
+list4 = []
 
+for key, val in dict1.items():
+    if val == 1:
+        list1.append(key)
+        if val not in list3:
+            list3.append(val)
+    elif val == 2:
+        list2.append(key)
+        if val not in list4:
+            list4.append(val)
 
+dict2 = dict.fromkeys(list3, list1)
+dict2.update(dict.fromkeys(list4, list2))
 
+print(dict2)
 
+#  program to Sort Dictionary by values summation
+print("_" * 25, '# Exercise 61', "_" * 25)
 
+#  program to convert a dictionary into n sized dictionary.
+print("_" * 25, '# Exercise 62', "_" * 25)
 
+dict1 = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6}
+N = 3
+count = 0
+dict2 = {}
+list1 = []
+list2 = []
+list3 = []
 
+for word in dict1.items():
+    if count < N:
+        count += 1
+        list1.append(word)
+    else:
+        list2.append(word)
+list1 = dict(list1)
+list2 = dict(list2)
 
+list3.append(list1)
+list3.append(list2)
+print(list3)
 
+#  program to reverse each string value in the dictionary and add an
+#  underscore before and after the Keys.
+print("_" * 25, '# Exercise 63', "_" * 25)
 
+dict1 = {'a': 'Python', 'b': 'Programming', 'c': 'Learning'}
+dict2 = {}
+for key, val in dict1.items():
+    key = '_' + key + '_'
+    dict2[key] = val[::-1]
 
+print(dict2)
 
+#  program to sum unique elements from dictionary list values.
+print("_" * 25, '# Exercise 64', "_" * 25)
 
+dict1 = {'a': [6, 7, 2, 8, 1], 'b': [2, 3, 1, 6, 8, 10], 'd': [1, 8, 2, 6, 9]}
+sum1 = 0
+list1 = []
+for key, val in dict1.items():
+    for value in val:
+        if value not in list1:
+            list1.append(value)
+            sum1 += value
 
-
-
-
-
+print(sum1)
 
