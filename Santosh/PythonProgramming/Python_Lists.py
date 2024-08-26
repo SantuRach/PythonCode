@@ -1,4 +1,3 @@
-
 """
 ################################# Python Lists #################################
 """
@@ -160,8 +159,7 @@ print(list1)
 print("_" * 50)
 list1 = [1, 2, 3, 4, 5, 6, 2, 2]
 
-print(list1.count(2)) #3
-
+print(list1.count(2))  #3
 
 ################################# sort  #################################
 #sort() method : This  method sort the list data in ascending and descending order and
@@ -171,10 +169,10 @@ print(list1.count(2)) #3
 print("_" * 50)
 list1 = [10, 2, 38, 44, 5, 6, 21, 25]
 
-list1.sort() # Ascending order
+list1.sort()  # Ascending order
 print(list1)
 
-list1.sort(reverse=True) # Descending order
+list1.sort(reverse=True)  # Descending order
 print(list1)
 
 ################################# sorted  function #################################
@@ -189,7 +187,7 @@ print(sorted(list1))  # Ascending order
 
 print(sorted(list1, reverse=True))  # Descending order
 
-print(list1) # Original list is not modified
+print(list1)  # Original list is not modified
 
 ################################# Reverse  method #################################
 # reverse() method : This  method reverses the list data  and
@@ -211,7 +209,7 @@ list1 = [10, 2, 38, 44, 5, 6, 21, 25]
 
 output = list(reversed(list1))
 print(output)
-print(list1) # Original list is not modified
+print(list1)  # Original list is not modified
 
 #################################  Copy method #################################
 
@@ -243,42 +241,39 @@ list1.insert(3, 999)
 print(list1, id(list1))
 print(list2, id(list2))
 
-
 ####################### max and min and sum of values #######################
 print("_" * 50)
 
-list_m = [3, 6, 8, 33, 22, 12,]
+list_m = [3, 6, 8, 33, 22, 12, ]
 
 print("Max number :", max(list_m))
 print("Minimum value :", min(list_m))
 print("sum of list value :", sum(list_m))
 
-
 ####################### list comprehension #######################
 print("_" * 50)
 
-list_m = [3, 6, 8, 33, 22, 12,]
+list_m = [3, 6, 8, 33, 22, 12, ]
 
 result = [i for i in list_m if i % 2 == 0]
 print(result)
 
-
-result = [(i, "Even")  if i % 2 == 0 else (i, "Odd") for i in list_m]
+result = [(i, "Even") if i % 2 == 0 else (i, "Odd") for i in list_m]
 print(result)
 
 # Exercise 1
 #   Python program to calculate the square of each number from the given list.
 print("_" * 50)
 
-list1 = [3, 9, 8, 33, 22, 12,25]
+list1 = [3, 9, 8, 33, 22, 12, 25]
 for val in list1:
-    print("Square of ", val, "is ", val**2)
+    print("Square of ", val, "is ", val ** 2)
 
 # Exercise 2
 # Python program to combine two lists.
 print("_" * 50)
 
-list1 = [3, 0, 8, 33, 22, 12,25]
+list1 = [3, 0, 8, 33, 22, 12, 25]
 list2 = [4, 5, 0, 'Santosh']
 list3 = list1 + list2
 print(list3)
@@ -287,7 +282,7 @@ print(list3)
 # program to calculate the sum of all elements from a list.
 print("_" * 50)
 
-list1 = [3, 0, 8, 33, 22, 12,25]
+list1 = [3, 0, 8, 33, 22, 12, 25]
 
 print(sum(list1))
 
@@ -295,7 +290,7 @@ print(sum(list1))
 # program to find a product of all elements from a given list.
 print("_" * 50)
 
-list1 = [3, 7, 8, 33, 22, 12,25]
+list1 = [3, 7, 8, 33, 22, 12, 25]
 prod = 1
 for val in list1:
     prod *= val
@@ -305,7 +300,7 @@ print("Product :", prod)
 # program to find the minimum and maximum elements from the list.
 print("_" * 50)
 
-list1 = [3, 7, 8, 33, 22, 12,25]
+list1 = [3, 7, 8, 33, 22, 12, 25]
 
 print("Min :", min(list1))
 print("Max :", max(list1))
@@ -314,7 +309,7 @@ print("Max :", max(list1))
 # program to differentiate even and odd elements from the given list.
 print("_" * 50)
 
-list1 = [3, 7, 8, 33, 22, 12,25]
+list1 = [3, 7, 8, 33, 22, 12, 25]
 list_even = []
 list_odd = []
 for val in list1:
@@ -330,7 +325,7 @@ print("Odd :", list_odd)
 # program to remove all duplicate elements from the list.
 print("_" * 50)
 
-list1 = [3, 7, 8, 33, 22, 12,25, 7, 22, 35]
+list1 = [3, 7, 8, 33, 22, 12, 25, 7, 22, 35]
 list2 = []
 for val in list1:
     if val not in list2:
@@ -383,7 +378,6 @@ for val in range(len(list1)):
     list2.insert(0, list1[val])
 
 print(list2)
-
 
 # Exercise 12
 # program to reverse a list with reversed func.
@@ -444,7 +438,7 @@ print("_" * 50)
 list1 = [3, -7, 82, 33, 28, 12, -25, 73, 22, 35, -9, -57, 21, 42]
 list2 = []
 for val in list1:
-    if val%3 == 0 and val%7 == 0:
+    if val % 3 == 0 and val % 7 == 0:
         list2.append(val)
 
 print(list2)
@@ -478,7 +472,6 @@ print(list1)
 print("_" * 50)
 list2 = sorted(list1)
 print(list2)
-
 
 # Exercise 20
 # program to remove data from the list from a specific index using the pop method.
@@ -528,8 +521,8 @@ print("$".join(list1))
 # program to get the difference between two lists.
 print("_" * 50)
 
-list1 = ["a", "b", "c", "d",4, 5]
-list2 = [1,2,3,"a",4,5,"e"]
+list1 = ["a", "b", "c", "d", 4, 5]
+list2 = [1, 2, 3, "a", 4, 5, "e"]
 list3 = []
 for val1 in list1:
     if val1 not in list2:
@@ -548,12 +541,11 @@ for word in list1:
     list2.append(word[::-1])
 print(list2)
 
-
 # Exercise 26
 # program to get keys and values from the list of dictionaries.
 print("_" * 50)
 
-list1 = [{'a':12}, {'b': 34}, {'c': 23}, {'d': 11}, {'e': 15}]
+list1 = [{'a': 12}, {'b': 34}, {'c': 23}, {'d': 11}, {'e': 15}]
 keys = []
 values = []
 for word in list1:
@@ -567,8 +559,8 @@ print(values)
 # program to get all the unique numbers in the list.
 print("_" * 50)
 
-list1 = ["a", "b", "c", "d",4, 5]
-list2 = [1,2,3,"a",4,5,"e"]
+list1 = ["a", "b", "c", "d", 4, 5]
+list2 = [1, 2, 3, "a", 4, 5, "e"]
 list3 = []
 for val1 in list1:
     if val1 in list2:
@@ -597,7 +589,6 @@ for i in range(len(list1)):
         list2.append(list1[i])
 print(list2)
 
-
 # Exercise 30
 # program to convert multiple numbers from a list into a single number.
 print("_" * 50)
@@ -614,7 +605,7 @@ print("_" * 50)
 
 # list1 =  [[1, 1], [2, 4], [3, 9], [4, 16], [5, 25], [6, 36], [7, 49], [8, 64], [9, 81], [10, 100]]
 
-list1 = [(i, i**2) for i in range(1,11)]
+list1 = [(i, i ** 2) for i in range(1, 11)]
 
 print(list1)
 
@@ -622,7 +613,7 @@ print(list1)
 # program to create a list of five consecutive numbers in the list.
 print("_" * 50)
 
-list1 = [[i+j*5-5 for i in range(1,6)] for j in range(1,5)]
+list1 = [[i + j * 5 - 5 for i in range(1, 6)] for j in range(1, 5)]
 
 print(list1)
 
@@ -630,11 +621,11 @@ print(list1)
 # program to insert a given string at the beginning of all items in a list.
 print("_" * 50)
 
-list1 = [1,2,3,4,5]
+list1 = [1, 2, 3, 4, 5]
 str1 = 'Sqa'
 list2 = []
 for val in list1:
-    char = str1+str(val)
+    char = str1 + str(val)
     list2.append(char)
 print(list2)
 
@@ -696,7 +687,7 @@ print(list_highest)
 # program to count empty dictionaries from the given list.
 print("_" * 50)
 
-list1 = [{}, {'a': 'sqatools'}, [], {'a': 123}, {},{},()]
+list1 = [{}, {'a': 'sqatools'}, [], {'a': 123}, {}, {}, ()]
 empty_count = 0
 
 for val in list1:
@@ -710,15 +701,7 @@ print(empty_count)
 print("_" * 50)
 
 list1 = [0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4]
-print(set(list1))
-leng = len(list1)
 
-for i in range(leng):
-    if list1[i] == list1[i+1]:
-        list1.remove(list1[i])
-        leng = len(list1)
-
-print(list1)
 
 # Exercise 40
 # program to split a given list into two parts where the length
@@ -728,7 +711,7 @@ print("_" * 50)
 list1 = [4, 6, 7, 3, 2, 5, 6, 7, 6, 4]
 length = 5
 
-list1 = [[list1[i] for i in range(0,length)], [list1[i] for i in range(length,len(list1))]]
+list1 = [[list1[i] for i in range(0, length)], [list1[i] for i in range(length, len(list1))]]
 
 print(list1)
 
@@ -755,7 +738,7 @@ print("_" * 50)
 list1 = []
 for i in range(3):
     list1.append([])
-    for j in range(4,7):
+    for j in range(4, 7):
         list1[i].append(j)
 
 print(list1)
@@ -793,7 +776,7 @@ print(list2)
 # to find maximum and minimum values in the given heterogeneous list.
 print("_" * 50)
 
-list1 = ['san',1,2,3,'rach']
+list1 = ['san', 1, 2, 3, 'rach']
 list2 = []
 for value in list1:
     if isinstance(value, int):
@@ -831,8 +814,8 @@ print("_" * 50)
 list1 = [1, 1, 3, 4, 4, 5, 6, 7]
 
 list2 = []
-for i in range(len(list1)-1):
-    diff = abs(list1[i] - list1[i+1])
+for i in range(len(list1) - 1):
+    diff = abs(list1[i] - list1[i + 1])
     list2.append(diff)
 print(list2)
 
@@ -840,10 +823,12 @@ print(list2)
 # Python program to calculate the average of the given list.
 print("_" * 50)
 
+sum1 = 0
 list1 = [3, 5, 7, 2, 6, 12, 3]
+for val in list1:
+    sum1 += val
 
-
-print("Average :", sum(list1)/len(list1))
+print("Average sum :", sum1 / len(list1))
 
 # Exercise 50
 # program to count integers in a given mixed list.
@@ -967,7 +952,7 @@ list1 = [3, 5, 7, 8, 9]
 list2 = []
 ele = 'San'
 
-for i in range(0,len(list1)*2,2):
+for i in range(0, len(list1) * 2, 2):
     list1.insert(i, ele)
 
 print(list1)
@@ -989,12 +974,11 @@ print(list2)
 # program to get the factorial of each item in the list.
 print("_" * 50)
 
-
 list1 = [1, 2, 3, 4]
 list2 = []
 for val in list1:
     fact = 1
-    for i in range(1, val+1):
+    for i in range(1, val + 1):
         fact = fact * i
     list2.append(fact)
 
@@ -1008,7 +992,7 @@ list1 = []
 temp = 0
 f0 = f2 = 0
 f1 = 1
-for val in range(0,20):
+for val in range(0, 20):
     list1.append(f0)
     f2 = f0 + f1
     f0 = f1
@@ -1067,8 +1051,8 @@ list2 = []
 
 for val in list1:
     count = 0
-    for i in range(1, val//2):
-        if val % i == 0 :
+    for i in range(1, val // 2):
+        if val % i == 0:
             count += 1
     if count == 1:
         print("Prime", val)
@@ -1088,7 +1072,6 @@ print("Remove 1 element from left", list1[1:])
 print("Remove 1 element from right", list1[0:-1])
 print("Remove 1 element from left", list1[2:])
 print("Remove 1 element from right", list1[0:-2])
-
 
 # Exercise 67
 # program to create a dictionary with two lists.
@@ -1111,7 +1094,6 @@ list2 = set(list1)
 
 print(list2)
 
-
 # Exercise 69
 # Python program to calculate the bill per fruit purchased from a given fruits list.
 print("_" * 50)
@@ -1122,8 +1104,7 @@ fruit_quantity = [['apple', 2], ['mango', 10]]
 for fruit, quantity in fruit_quantity:
     for fruit1, price in fruit_list_Price:
         if fruit == fruit1:
-            print("Fruit :", fruit, '\n', "Bill :", quantity*price)
-
+            print("Fruit :", fruit, '\n', "Bill :", quantity * price)
 
 # Exercise 70
 # Python program to calculate the bill per fruit purchased from a given fruits list.
@@ -1135,8 +1116,7 @@ fruit_quantity = [['apple', 2], ['mango', 10]]
 for fruit, quantity in fruit_quantity:
     for fruit1, price in fruit_list_Price:
         if fruit == fruit1:
-            print("Fruit :", fruit, '\n', "Bill :", quantity*price)
-
+            print("Fruit :", fruit, '\n', "Bill :", quantity * price)
 
 # Exercise 71
 # program to flatten a given nested list structure.
@@ -1179,9 +1159,8 @@ for i, j in list1:
     list2.append(i)
     list3.append(j)
 
-list4 = dict(zip(list2, list3)) # zip converts 2 lists to one dict
+list4 = dict(zip(list2, list3))  # zip converts 2 lists to one dict
 print(list4)
-
 
 # Exercise 74
 # program to replace ‘Java’ with ‘Python’ from the given list.
@@ -1234,7 +1213,7 @@ print([list3])
 # from the given list.
 print("_" * 50)
 
-list1 = [{'Hello':5}, {'student': 7}, {'are': 3}, {'learning': 8}, {'Hello':5}, {'Language': 8}, {'are': 3}]
+list1 = [{'Hello': 5}, {'student': 7}, {'are': 3}, {'learning': 8}, {'Hello': 5}, {'Language': 8}, {'are': 3}]
 dict1 = {}
 list2 = []
 for word in list1:
@@ -1242,8 +1221,6 @@ for word in list1:
         list2.append(word)
 
 print(list2)
-
-
 
 # Exercise 79
 # [22.4, 4.0, -16.22, -9.1, 11.0, -12.22, 14.2, -5.2, 17.5]
@@ -1257,15 +1234,3 @@ for val in list1:
     sum += int(val)
 
 print(sum)
-
-
-
-
-
-
-
-
-
-
-
-
