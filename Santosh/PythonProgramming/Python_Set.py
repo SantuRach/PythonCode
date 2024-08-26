@@ -1,4 +1,9 @@
 """
+
+
+
+
+"""
 ################################# Python Set #################################
 """
 set1 = {1, 4, 6, 7, 'a', 'b', 'c', 4, 6}
@@ -25,7 +30,8 @@ print(dir(set))
 # '__iand__', '__init__', '__init_subclass__', '__ior__', '__isub__', '__iter__', '__ixor__',
 # '__le__', '__len__', '__lt__', '__ne__', '__new__', '__or__', '__rand__', '__reduce__',
 # '__reduce_ex__', '__repr__', '__ror__', '__rsub__', '__rxor__', '__setattr__', '__sizeof__',
-# '__str__', '__sub__', '__subclasshook__', '__xor__', 'add', 'clear', 'copy', 'difference',
+# '__str__', '__sub__', '__subclasshook__', '__xor__', 
+'add', 'clear', 'copy', 'difference',
 # 'difference_update', 'discard', 'intersection', 'intersection_update', 'isdisjoint', 'issubset',
 # 'issuperset', 'pop', 'remove', 'symmetric_difference', 'symmetric_difference_update', 'union',
 # 'update']
@@ -209,4 +215,213 @@ set2 = set1.copy()
 set2.add(99)
 print('Deep copy: ',set1)
 print('Deep copy: ',set2)
+
+
+
+
+
+####################################################################################
+# program to add an element to a set.
+print("_" * 25, '# Exercise 1', "_" * 25)
+
+set1 = {1, 2, 3, 4, 5, 6, 'Hello'}
+
+print(set1)
+set1.add(100)
+print(set1)
+
+####################################################################################
+# program to remove an element from a set.
+print("_" * 25, '# Exercise 2', "_" * 25)
+
+set1 = {1, 2, 3, 4, 5, 6, 'Hello'}
+
+print(set1, len(set1))
+set1.remove(5)
+set1.remove('Hello')
+print(set1, len(set1))
+
+####################################################################################
+# program to check if an element is present in a set.
+print("_" * 25, '# Exercise 3', "_" * 25)
+
+set1 = {1, 2, 3, 4, 5, 6, 'Hello'}
+ele1 = 'Hello'
+ele2 = 10
+
+if ele1 in set1:
+    print('Present')
+else:
+    print('Not present')
+
+if ele2 in set1:
+    print('Present')
+else:
+    print('Not present')
+
+####################################################################################
+# program to find the union of two sets.
+print("_" * 25, '# Exercise 4', "_" * 25)
+
+set1 = {1, 2, 3, 4, 5, 6, 'Hello'}
+set2 = {4, 5, 6, 7,8,9,'World'}
+
+set3 = set1.union(set2)
+
+print(set3)
+
+####################################################################################
+# program to find the intersection of two sets.
+print("_" * 25, '# Exercise 5', "_" * 25)
+
+set1 = {1, 2, 3, 4, 5, 6, 'Hello'}
+set2 = {4, 5, 6, 7,8,9,'World'}
+
+set3 = set1.intersection(set2)
+
+print(set3)
+
+####################################################################################
+# program to find the difference of two sets.
+print("_" * 25, '# Exercise 6', "_" * 25)
+
+set1 = {1, 2, 3, 4, 5, 6, 'Hello'}
+set2 = {4, 5, 6, 7,8,9,'World'}
+
+set1_2 = set1.difference(set2)
+set2_1 = set2.difference(set1)
+
+print(set1_2)
+print(set2_1)
+
+####################################################################################
+# program to find the symmetric difference of two sets.
+print("_" * 25, '# Exercise 7', "_" * 25)
+
+set1 = {1, 2, 3, 4, 5, 6, 'Hello'}
+set2 = {4, 5, 6, 7,8,9,'World'}
+
+set3 = set1.symmetric_difference(set2)
+
+print(set3)
+
+####################################################################################
+# program to show if one set is a subset of another set.
+print("_" * 25, '# Exercise 8', "_" * 25)
+
+set1 = {1, 2, 3, 4, 5, 6, 'Hello'}
+set2 = {4, 5, 6}
+set3 = {4, 5, 6, 'World'}
+
+print('Subset.....?', set2.issubset(set1))
+print('Subset.....?', set3.issubset(set1))
+
+####################################################################################
+# program to check if two sets are disjoint.
+print("_" * 25, '# Exercise 9', "_" * 25)
+
+set1 = {1, 2, 3, 4, 5, 6, 'Hello'}
+set2 = {7,8,9,'World'}
+
+print('Disjoint....?', set2.isdisjoint(set1))
+print(list(set1))
+
+####################################################################################
+# Python program to find the maximum element in a set.
+print("_" * 25, '# Exercise 10', "_" * 25)
+
+set1 = {1, 2, 3, 4, 5, 6}
+
+print('Max :', max(set1))
+print('Min :', min(set1))
+
+####################################################################################
+# Python program to find the maximum element in a set.
+print("_" * 25, '# Exercise 11', "_" * 25)
+
+set1 = {1, 2, 3, 4, 5, 6}
+
+print('Sum :', sum(set1))
+print('Average :',sum(set1)/len(set1))
+
+
+####################################################################################
+# program to check if all elements in a set are even.
+print("_" * 25, '# Exercise 12', "_" * 25)
+
+set1 = {1, 2, 3, 4, 5, 6}
+#set1 = {2, 4, 6}
+count = 0
+
+for ele in set1:
+    if ele % 2 != 0:
+        count = 1
+if count == 1:
+    print('All elements are not even')
+else:
+    print('All elements are even')
+
+
+####################################################################################
+# program to check if all elements in a set are prime.
+print("_" * 25, '# Exercise 13', "_" * 25)
+
+set1 = {11, 7, 23}
+#set1 = {2, 4, 6}
+count = 0
+
+for ele in set1:
+    for i in range(2, ele):
+        if ele % i == 0:
+            count = 1
+if count != 1:
+    print('All elements are Prime')
+else:
+    print('All elements are Not Prime')
+
+
+####################################################################################
+# program to check if a set is a proper subset of another set.
+print("_" * 25, '# Exercise 14', "_" * 25)
+
+set1 = {1, 2, 3, 4, 5, 6}
+set2 = {2, 4, 6, 11}
+count = 0
+
+if set2.issubset(set1):
+    print('Subset')
+else:
+    print('Not Subset')
+
+
+"""
+
+
+####################################################################################
+#  program to find the cartesian product of two sets.
+print("_" * 25, '# Exercise 15', "_" * 25)
+
+set1 = {1, 2}
+set2 = {3, 4}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
