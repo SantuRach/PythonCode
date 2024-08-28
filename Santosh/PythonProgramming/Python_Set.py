@@ -1,9 +1,4 @@
 """
-
-
-
-
-"""
 ################################# Python Set #################################
 """
 set1 = {1, 4, 6, 7, 'a', 'b', 'c', 4, 6}
@@ -394,34 +389,121 @@ else:
     print('Not Subset')
 
 
-"""
-
-
 ####################################################################################
 #  program to find the cartesian product of two sets.
 print("_" * 25, '# Exercise 15', "_" * 25)
 
 set1 = {1, 2}
 set2 = {3, 4}
+list1 = []
+
+for val1 in set1:
+    for val2 in set2:
+        list1.append((val1, val2))
+
+print(set(list1))
+
+#  program to remove all elements from a set.
+#  program to remove a random element from a set..
+print("_" * 25, '# Exercise 16', "_" * 25)
+
+set1 = {1, 2}
+set1.clear()
+
+print(set1)
+
+set1 = {1, 2,3,4,5,6,7}
+set1.pop()
+
+print(set1)
+
+####################################################################################
+#  program to find the difference between two sets using the “-” operator.
+print("_" * 25, '# Exercise 17', "_" * 25)
+
+set1 = {1, 2, 3, 4, 5, 6, 'Hello'}
+set2 = {4, 5, 6, 7, 8, 9, 'World'}
+
+print('Diff : ', set1 - set2)
+
+# program to find the intersection between two sets using the “&” operator.
+print("_" * 25, '# Exercise 17', "_" * 25)
+print('Intersection : ', set1 & set2)
+
+# program to find the union of multiple sets using the | operator.
+print("_" * 25, '# Exercise 17', "_" * 25)
+print('Union : ', set1 | set2)
+
+# program to find the symmetric difference of two sets using the “^” operator
+print("_" * 25, '# Exercise 17', "_" * 25)
+print('symmetric difference : ', set1 ^ set2)
+
+####################################################################################
+#  program to find the common elements between two sets.
+print("_" * 25, '# Exercise 18', "_" * 25)
+
+set1 = {1, 2, 3, 4, 5, 6, 'Hello'}
+set3 = {4, 5, 6, 9}
+
+print('Common eleemnst : ', set1.intersection(set3))
+
+####################################################################################
+#  program to remove a specific element from a set.
+print("_" * 25, '# Exercise 19', "_" * 25)
+
+set1 = {1, 2, 3, 4, 5, 6, 'Hello'}
+
+set1.remove(5)
+
+print(set1)
+
+#  program to check if two sets are equal.
+print("_" * 25, '# Exercise 20', "_" * 25)
+
+set1 = {1, 2, 3, 4, 5, 6, 'Hello'}
+set2 = {1, 2, 3, 4, 5, 6, 'Hello', 9}
+
+if set1 == set2:
+    print('Equal')
+else:
+    print('Not Equal')
 
 
+####################################################################################
+#  program to create a frozen set.
+print("_" * 25, '# Exercise 21', "_" * 25)
+
+a = {1,2,4,6}
+
+b = frozenset(a)
 
 
+print(type(b))
 
+####################################################################################
+#  program to convert a set to a dictionary with each element as key and value to an empty set.
+print("_" * 25, '# Exercise 22', "_" * 25)
 
+set1 = {1, 2, 4, 6}
+dict1 = {}
 
+for val in set1:
+    dict1[val] = {}
 
+print(dict1)
 
+####################################################################################
+#  program to create a set of even numbers from 1 to 20.
+print("_" * 25, '# Exercise 23', "_" * 25)
 
+set1 = set()
+set2 = set()
 
+for val in range(1, 21):
+    if val % 2 == 0:
+        set1.add(val)
+    else:
+        set2.add(val)
 
-
-
-
-
-
-
-
-
-
-
+print(set1)
+print(set2)
