@@ -42,6 +42,5 @@ def appendfile(filename, content):
     file.write(content)
     file.close()
 
-
 content = "Surname is Rachotimath \n"
 appendfile('Python_File_Handling2.txt', content)
