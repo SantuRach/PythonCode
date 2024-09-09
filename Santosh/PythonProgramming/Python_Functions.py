@@ -1,3 +1,6 @@
+'''
+
+
 """
 ################################# Python Functions #################################
 
@@ -220,24 +223,438 @@ print("_" * 25, '# Exercise 1', "_" * 25)
 
 # Method 1
 print("_" * 50)
+
+
 def addition1(x, y):
     sum = x + y
     print(sum)
+
 
 addition1(4, 5)
 
 # Method 2
 print("_" * 50)
+
+
 def addition2(*args):
     sum1 = sum(args)
     print(sum1)
+
 
 addition2(10, 5)
 
 # Method 3
 print("_" * 50)
-def addition2(*args):
+
+
+def addition3(*args):
     sum1 = sum(args)
     print(sum1)
 
-addition2(10, 10)
+
+addition3(10, 10)
+
+####################################################################################
+#   Python function program to print the input string 10 times.
+print("_" * 25, '# Exercise 2 #', "_" * 25)
+
+
+def print10(x):
+    print(x * 10)
+
+
+print10('Santosh ')
+
+####################################################################################
+#   function program to print a table of a given number.
+print("_" * 25, '# Exercise 3 #', "_" * 25)
+
+
+def table(x):
+    for i in range(1, 11):
+        print(x, '*', i, '=', x * i)
+
+
+table(5)
+
+####################################################################################
+#   function program to find the maximum of three numbers.
+print("_" * 25, '# Exercise 4 #', "_" * 25)
+
+
+def maxim(*args):
+    print('Max of numbers is : ', max(args))
+
+
+maxim(17, 21, -9)
+
+####################################################################################
+#   function program to find the sum, prod of all the numbers in a list.
+print("_" * 25, '# Exercise 5 #', "_" * 25)
+
+
+def addition3(*args):
+    sum = 0
+    prod = 1
+    for val in list1:
+        sum += val
+        prod *= val
+    print(sum)
+    print(prod)
+
+
+list1 = [-8, 6, 1, 9, 2]
+addition3(list1)
+
+####################################################################################
+#   function program to find the sum, prod of all the numbers in a list.
+print("_" * 25, '# Exercise 6 #', "_" * 25)
+
+
+def rev_str(*args):
+    print(str1[::-1])
+
+
+str1 = 'Python1234'
+rev_str(str1)
+
+####################################################################################
+#   Python function program to check whether a number is in a given range.
+print("_" * 25, '# Exercise 7 #', "_" * 25)
+
+
+def range1(*args):
+    if num in range(2, 21):
+        print('Present in range')
+    else:
+        print('Not Present in range')
+
+
+num = 20
+range1(num)
+
+####################################################################################
+#   function program that takes a list and returns a new list with unique elements of the first list.
+print("_" * 25, '# Exercise 8 #', "_" * 25)
+
+
+def sort_list(x):
+    a = set(x)
+    print(a)
+
+
+list1 = [2, 2, 3, 1, 4, 4, 4, 4, 4, 6]
+sort_list(list1)
+
+####################################################################################
+# function program that take a number as a parameter and checks whether the number is prime or not.
+print("_" * 25, '# Exercise 9 #', "_" * 25)
+
+
+def prime(x):
+    count = 0
+    for i in range(2, x - 1):
+        if x % i == 0:
+            count = 1
+    if count == 0:
+        print('Prime')
+    else:
+        print('Not Prime')
+
+
+num = 11
+prime(num)
+
+####################################################################################
+# function function program to find the even numbers from a given list.
+print("_" * 25, '# Exercise 10 #', "_" * 25)
+
+
+def func1(l):
+    for val in l:
+        if val % 2 == 0:
+            list2.append(val)
+    print(list2)
+
+
+list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+list2 = []
+func1(list1)
+
+####################################################################################
+# function program to create and print a list where the values are squares of numbers between 1 to 10.
+print("_" * 25, '# Exercise 11 #', "_" * 25)
+
+
+def func2(l):
+    for i in range(1, l):
+        print(i ** 2, end=", ")
+
+
+func2(10)
+print()
+####################################################################################
+# function program to find the LCM of two numbers.
+print("_" * 25, '# Exercise 12 #', "_" * 25)
+
+
+def lcm(x, y):
+    for i in range(2, x + 1):
+        if x % i == y % i == 0:
+            print('LCM is :', i)
+            break
+
+
+lcm(14, 21)
+
+####################################################################################
+# function program to calculate the sum of numbers from 0 to 10.
+print("_" * 25, '# Exercise 13 #', "_" * 25)
+
+
+def summation(x):
+    sum1 = 0
+    for i in range(x + 1):
+        sum1 += i
+    print('summation :', sum1)
+
+
+summation(10)
+
+####################################################################################
+# function program to find the HCF of two numbers.
+print("_" * 25, '# Exercise 14 #', "_" * 25)
+
+
+def hcf(x, y):
+    for i in range(2, x + 1):
+        if x % i == y % i == 0:
+            hcf = i
+    print('HCF :', hcf)
+
+
+hcf(18, 54)
+
+####################################################################################
+# function program to create a function with *args as parameters.
+print("_" * 25, '# Exercise 15 #', "_" * 25)
+
+
+def func4(*args):
+    print(args)
+    for val in args:
+        print(val ** 3)
+
+
+func4(5, 6, 8, 7)
+
+####################################################################################
+# function program to get the factorial of a given number.
+print("_" * 25, '# Exercise 16 #', "_" * 25)
+
+
+def factorial(num):
+    prod = 1
+    for i in range(1, num + 1):
+        prod *= i
+    print('factorial', prod)
+
+
+factorial(10)
+
+####################################################################################
+# Python function program to get the Fibonacci series up to the given number.
+print("_" * 25, '# Exercise 17 #', "_" * 25)
+
+
+def fibonacci(num):
+    f0 = 0
+    f1 = 1
+    list1 = []
+    list1.append(f0)
+    list1.append(f1)
+    for i in range(num - 2):
+        f = f0 + f1
+        f0 = f1
+        f1 = f
+        list1.append(f)
+    print(list1)
+
+
+fibonacci(10)
+
+####################################################################################
+# function program to check whether a combination of two numbers has a sum of 10 from the given list.
+print("_" * 25, '# Exercise 18 #', "_" * 25)
+list1 = [2, 5, 6, 4, 7, 3, 8, 9, 1]
+
+
+def check_sum(num):
+    for i in range(len(list1)):
+        for j in range(i + 1, len(list1)):
+            if list1[i] + list1[j] == 10:
+                print('True')
+                break
+        break
+
+
+check_sum(list1)
+
+####################################################################################
+# function program to get unique values from the given list.
+print("_" * 25, '# Exercise 19 #', "_" * 25)
+list1 = [4, 6, 1, 7, 6, 1, 5]
+list2 = []
+
+
+def unique(num):
+    for val in list1:
+        # list2 = set(list1)
+        if val not in list2:
+            list2.append(val)
+    print(list2)
+
+
+unique(list1)
+
+# function program to get the duplicate characters from the string.
+print("_" * 25, '# Exercise 20 #', "_" * 25)
+str1 = 'Programming'
+list2 = []
+
+
+def duplicate(str1):
+    for char in str1:
+        if str1.count(char) > 1:
+            if char not in list2:
+                list2.append(char)
+    print(list2)
+
+
+duplicate(str1)
+
+####################################################################################
+# function program to get the square of all values in the given dictionary.
+print("_" * 25, '# Exercise 21 #', "_" * 25)
+dict1 = {'a': 4, 'b': 3, 'c': 12, 'd': 6}
+
+
+def square(dict1):
+    dict2 = {}
+    for key, val in dict1.items():
+        dict2[key] = val ** 2
+    print(dict2)
+
+
+square(dict1)
+
+####################################################################################
+# Python function program to create dictionary output from the given string.
+# Note: Combination of the first and last character from each word should be
+# key and the same word will the value in the dictionary.
+print("_" * 25, '# Exercise 22 #', "_" * 25)
+
+str1 = 'Python is easy to Learn'
+
+
+def first_last(str1):
+    list1 = str1.split(" ")
+    dict1 = {}
+    for word in list1:
+        key = word[0] + word[-1]
+        dict1[key] = word
+    print(dict1)
+
+
+first_last(str1)
+
+####################################################################################
+# function program to print a list of prime numbers from 1 to 100.
+print("_" * 25, '# Exercise 23 #', "_" * 25)
+
+str1 = 'Python is easy to Learn'
+
+
+def prime(num):
+    list1 = []
+    for i in range(2, num):
+        count = 0
+        for j in range(2, i):
+            if i % j == 0:
+                count = 1
+        if count == 0:
+            list1.append(i)
+    print(list1)
+
+
+prime(100)
+
+####################################################################################
+# function program to check whether the given year is a leap year.
+print("_" * 25, '# Exercise 24 #', "_" * 25)
+
+str1 = 'Python is easy to Learn'
+
+
+def leap(num):
+    if num % 4 == 0:
+        print('Leap year')
+    else:
+        print('Not leap year')
+
+
+leap(2023)
+
+####################################################################################
+# function program to reverse an integer.
+print("_" * 25, '# Exercise 25 #', "_" * 25)
+
+str1 = 'Python is easy to Learn'
+
+
+def leap(num):
+    num = str(num)
+    str1 = num[::-1]
+    print(str1, type(num))
+
+
+leap(2023)
+'''
+####################################################################################
+# Calculator
+print("_" * 25, '# Calculator #', "_" * 25)
+
+
+def calculator():
+    def addition(num1, num2):
+        return num1 + num2
+
+    def substraction(num1, num2):
+        return num1 - num2
+    def multiplication(num1, num2):
+        return num1 * num2
+
+    def division(num1, num2):
+        return num1 / num2
+
+    num1 = int(input('Enter first number :'))
+    num2 = int(input('Enter Second number :'))
+    operation = int(input('************************************* \n Enter 1 for addition \n'
+                          'Enter 2 for Substraction \n'
+                          ' Enter 3 for Multiplication \n'
+                          ' Enter 4 for Division \n'
+                          'Enter 5 to Exit \n \n'))
+
+    if operation == 1:
+        print(f'Sum of numbers {num1} & {num2} is :', addition(num1, num2))
+    elif operation == 2:
+        print(f'Substraction of numbers {num1} & {num2} is :', substraction(num1, num2))
+    elif operation == 3:
+        print(f'Multiplication of numbers {num1} & {num2} is :', multiplication(num1, num2))
+    elif operation == 3:
+        print(f'Division of numbers {num1} & {num2} is :', division(num1, num2))
+    else:
+        exit()
+
+while(True):
+    calculator()
