@@ -1,1 +1,17 @@
-My name is Rachotimath
+1.	print a combination of 2 elements from the list whose sum is 10.
+2.	generate all sublists with 5 or more elements in it from the given list. test1@gmail.com
+3.	combine two list elements as a sublist in a list.
+4.	iterate over two lists simultaneously and create a list of sublists. test2@gmail.com
+5.	remove consecutive duplicates of given lists.
+6.	pack consecutive duplicates of given list elements into sublists. test3@gmail.com
+7.	select random numbers from the list.
+8.	select random numbers from the list.
+9.	zip two lists of lists into a test4@gmail.comtest4@gmail.comtest4@gmail.comtest4@gmail.com list.
+10.	find maximum and minimum values in the given heterogeneous list.
+11.	sort a given list in ascending order according to the sum of its sublist. test4@gmail.com
+12.	create a dictionary with two lists.
+13.	replace ‘java’ with ‘python’ from the given list.
+14.	get the median of all the elements from the list.
+15.	get the standard deviation of the list element.
+16.	convert all numbers to binary format from a given list.
+17.	convert all the numbers into roman numbers from the given list.
