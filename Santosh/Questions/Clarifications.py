@@ -55,5 +55,7 @@
 #   program to initialize a dictionary with default values.
 #   program to Sort dictionaries list by Key’s Value list index.
 
-#  Set programs.
+#  File handling.
+#  Python file program to count all the words from a file.
+#  file program to compare two files.
 #  .
