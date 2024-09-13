@@ -1,0 +1,28 @@
+{
+  "Name": "Santosh",
+  "Surname": "Rachotimath",
+  "DOB": "28-Aug-1989",
+  "City" : "Belagum",
+  "Phone" : 123456789,
+  "Country": "India",
+  "test_data" : {
+
+    "test_01" : {
+      "username" : "testuser1",
+      "password" : "testuser@123"
+    },
+
+    "test_02" : {
+      "username" : "testuser2",
+      "password" : "P@12345"
+    },
+
+    "test_03" : {
+      "username" : "testuser3",
+      "password" : "P@ssw0rdpassword"
+    }
+
+
+
+  }
+}
